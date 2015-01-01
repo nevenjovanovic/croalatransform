@@ -1,0 +1,127 @@
+body {
+font-family: 'Courier New', Courier, monospace;
+}
+p.subtitle {
+        font-size: large;
+font-style:italic;
+color:#999966;
+}
+span.fin {
+	color:#999966;
+	font-size: small;
+	vertical-align: super;
+	}
+
+td a:link {text-decoration:none;}    /* unvisited link */
+td a:visited {text-decoration:none;} /* visited link */
+td a:hover {text-decoration:underline;}   /* mouse over link */
+td a:active {text-decoration:underline;}  /* selected link */
+	
+table {
+padding: 0.25em;
+margin: 0.25em;
+border: 1px solid silver;
+border-collapse: separate;
+border-spacing: 2px;
+font-family: monospace; 
+font-size: large;
+white-space: normal;
+line-height: normal;
+font-weight: normal;
+font-variant: normal;
+font-style: normal;
+color: -webkit-text;
+text-align: start;
+	display:table;
+
+}
+
+td {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	display:table-cell;
+}
+
+td.broj {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	text-align:right;
+	display:table-cell;
+}
+
+tbody {
+	display:table-row-group;
+
+}
+
+tbody tr:nth-child(odd){
+	background-color: #ddd;
+	display:table-row;
+}
+
+tbody tr:nth-child(even){
+	display:table-row;
+}
+
+thead {
+display:table-header-group;
+}
+
+thead td {
+	background-color: maroon;
+	color: white;
+}
+thead tr {
+	background-color: maroon;
+	color: white;
+   display:table-row;
+
+}
+
+blockquote title {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	background-color: maroon;
+	color: white;
+   display:block;
+
+}
+
+blockquote persName , birth , floruit, death, residence, occupation, bibl, event {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+   display:block;
+
+}
+
+event persName, bibl {
+display:inline;
+}
+
+blockquote event:nth-child(odd), occupation:nth-child(odd){
+	background-color: #ddd;
+}
+
+blockquote event:before {
+content:attr(when);
+}
+
+
+
+

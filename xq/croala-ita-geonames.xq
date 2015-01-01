@@ -1,0 +1,470 @@
+(: croala-ita-geonames: imena iz Talijana u geonames :)
+(: address to which we are sending the queries - geonames :)
+let $url := ('http://api.geonames.org/search?q=RIJEC&amp;maxRows=1&amp;continentCode=EU&amp;username=nevenjovanovic')
+let $rijeci := <list><n>
+  <t>Akvileje</t>
+  <q>Aquileia</q>
+</n>
+<n>
+  <t>Albano</t>
+  <q>Albano</q>
+</n>
+<n>
+  <t>Albissola</t>
+  <q>Albissola</q>
+</n>
+<n>
+  <t>Alessandria</t>
+  <q>Alessandria</q>
+</n>
+<n>
+  <t>Alessandria (Pijemont)</t>
+  <q>Alessandria</q>
+</n>
+<n>
+  <t>Arezzo</t>
+  <q>Arezzo</q>
+</n>
+<n>
+  <t>Arona</t>
+  <q>Arona</q>
+</n>
+<n>
+  <t>Arquà</t>
+  <q>Arquà</q>
+</n>
+<n>
+  <t>Asti</t>
+  <q>Asti</q>
+</n>
+<n>
+  <t>Avignon</t>
+  <q>Avignon</q>
+</n>
+<n>
+  <t>Bagnacavallo</t>
+  <q>Bagnacavallo</q>
+</n>
+<n>
+  <t>Bagnoregio</t>
+  <q>Bagnoregio</q>
+</n>
+<n>
+  <t>Bar</t>
+  <q>Bar</q>
+</n>
+<n>
+  <t>Bardolino</t>
+  <q>Bardolino</q>
+</n>
+<n>
+  <t>Bene Vagienna (Cuneo)</t>
+  <q>Bene Vagienna (Cuneo)</q>
+</n>
+<n>
+  <t>Bergamo</t>
+  <q>Bergamo</q>
+</n>
+<n>
+  <t>Bergamu</t>
+  <q>Bergamo</q>
+</n>
+<n>
+  <t>Bratislava</t>
+  <q>Bratislava</q>
+</n>
+<n>
+  <t>Brescia</t>
+  <q>Brescia</q>
+</n>
+<n>
+  <t>Careggi (Firenca)</t>
+  <q>Careggi (Firenca)</q>
+</n>
+<n>
+  <t>Casale</t>
+  <q>Casale</q>
+</n>
+<n>
+  <t>Castelfranco</t>
+  <q>Castelfranco</q>
+</n>
+<n>
+  <t>Cenede</t>
+  <q>Ceneda</q>
+</n>
+<n>
+  <t>Certaldo</t>
+  <q>Certaldo</q>
+</n>
+<n>
+  <t>Cesena</t>
+  <q>Cesena</q>
+</n>
+<n>
+  <t>Città di Portogruaro</t>
+  <q>Portogruaro</q>
+</n>
+<n>
+  <t>Cremone</t>
+  <q>Cremona</q>
+</n>
+<n>
+  <t>Diano (Lucania)</t>
+  <q>Diano</q>
+</n>
+<n>
+  <t>Dubrovnik</t>
+  <q>Dubrovnik</q>
+</n>
+<n>
+  <t>Dubrovniku</t>
+  <q>Dubrovnik</q>
+</n>
+<n>
+  <t>Ferrara</t>
+  <q>Ferrara</q>
+</n>
+<n>
+  <t>Figline Valdarno</t>
+  <q>Figline Valdarno</q>
+</n>
+<n>
+  <t>Firenca</t>
+  <q>Firenze</q>
+</n>
+<n>
+  <t>Forlì</t>
+  <q>Forlì</q>
+</n>
+<n>
+  <t>Frezzariji</t>
+  <q>Frezzaria</q>
+</n>
+<n>
+  <t>Friulija</t>
+  <q>Friuli</q>
+</n>
+<n>
+  <t>Gaeta</t>
+  <q>Gaeta</q>
+</n>
+<n>
+  <t>Genova</t>
+  <q>Genova</q>
+</n>
+<n>
+  <t>Gorizia</t>
+  <q>Gorizia</q>
+</n>
+<n>
+  <t>Konstantinopol</t>
+  <q>Konstantinopol</q>
+</n>
+<n>
+  <t>Konstantinopolu</t>
+  <q>Konstantinopol</q>
+</n>
+<n>
+  <t>Kopar</t>
+  <q>Kopar</q>
+</n>
+<n>
+  <t>Kopru</t>
+  <q>Kopar</q>
+</n>
+<n>
+  <t>Köln</t>
+  <q>Köln</q>
+</n>
+<n>
+  <t>Lauria (Potenza)</t>
+  <q>Lauria (Potenza)</q>
+</n>
+<n>
+  <t>Lecce</t>
+  <q>Lecce</q>
+</n>
+<n>
+  <t>Lecco</t>
+  <q>Lecco</q>
+</n>
+<n>
+  <t>Lion</t>
+  <q>Lyon</q>
+</n>
+<n>
+  <t>Lodi</t>
+  <q>Lodi</q>
+</n>
+<n>
+  <t>London</t>
+  <q>London</q>
+</n>
+<n>
+  <t>Louvainu</t>
+  <q>Louvain</q>
+</n>
+<n>
+  <t>Lucca</t>
+  <q>Lucca</q>
+</n>
+<n>
+  <t>Lugo</t>
+  <q>Lugo</q>
+</n>
+<n>
+  <t>Mantova</t>
+  <q>Mantova</q>
+</n>
+<n>
+  <t>Marradi</t>
+  <q>Marradi</q>
+</n>
+<n>
+  <t>Matera</t>
+  <q>Matera</q>
+</n>
+<n>
+  <t>Merceriji</t>
+  <q>Mercerie</q>
+</n>
+<n>
+  <t>Milano</t>
+  <q>Milano</q>
+</n>
+<n>
+  <t>Mlecima</t>
+  <q>Venezia</q>
+</n>
+<n>
+  <t>Modena</t>
+  <q>Modena</q>
+</n>
+<n>
+  <t>Modeni</t>
+  <q>Modena</q>
+</n>
+<n>
+  <t>Montefiascone</t>
+  <q>Montefiascone</q>
+</n>
+<n>
+  <t>Montemurlo</t>
+  <q>Montemurlo</q>
+</n>
+<n>
+  <t>Murano</t>
+  <q>Murano</q>
+</n>
+<n>
+  <t>Oderzo</t>
+  <q>Oderzo</q>
+</n>
+<n>
+  <t>Oxford</t>
+  <q>Oxford</q>
+</n>
+<n>
+  <t>Padova</t>
+  <q>Padova</q>
+</n>
+<n>
+  <t>Pariz</t>
+  <q>Paris</q>
+</n>
+<n>
+  <t>Pavia</t>
+  <q>Pavia</q>
+</n>
+<n>
+  <t>Perugia</t>
+  <q>Perugia</q>
+</n>
+<n>
+  <t>Pistoia</t>
+  <q>Pistoia</q>
+</n>
+<n>
+  <t>Pisturi</t>
+  <q>Pistura</q>
+</n>
+<n>
+  <t>Poreč</t>
+  <q>Poreč</q>
+</n>
+<n>
+  <t>Portese</t>
+  <q>Portese</q>
+</n>
+<n>
+  <t>Prag</t>
+  <q>Prag</q>
+</n>
+<n>
+  <t>Prato</t>
+  <q>Prato</q>
+</n>
+<n>
+  <t>Rab</t>
+  <q>Rab</q>
+</n>
+<n>
+  <t>Ravenna</t>
+  <q>Ravenna</q>
+</n>
+<n>
+  <t>Ravenni</t>
+  <q>Ravenna</q>
+</n>
+<n>
+  <t>Reggio Emilia</t>
+  <q>Reggio Emilia</q>
+</n>
+<n>
+  <t>Rim</t>
+  <q>Rim</q>
+</n>
+<n>
+  <t>Rovigo</t>
+  <q>Rovigo</q>
+</n>
+<n>
+  <t>S. Michele, Murano</t>
+  <q>Murano</q>
+</n>
+<n>
+  <t>Sabbio</t>
+  <q>Sabbio</q>
+</n>
+<n>
+  <t>Sabio Chiese (Brescia)</t>
+  <q>Sabio Chiese</q>
+</n>
+<n>
+  <t>San Daniele del Friuli</t>
+  <q>San Daniele del Friuli</q>
+</n>
+<n>
+  <t>San Severino</t>
+  <q>San Severino</q>
+</n>
+<n>
+  <t>Sassoferrato</t>
+  <q>Sassoferrato</q>
+</n>
+<n>
+  <t>Savignano</t>
+  <q>Savignano</q>
+</n>
+<n>
+  <t>Schio</t>
+  <q>Schio</q>
+</n>
+<n>
+  <t>Senigallia</t>
+  <q>Senigallia</q>
+</n>
+<n>
+  <t>Siena</t>
+  <q>Siena</q>
+</n>
+<n>
+  <t>Siracusa</t>
+  <q>Siracusa</q>
+</n>
+<n>
+  <t>Solto Collina</t>
+  <q>Solto Collina</q>
+</n>
+<n>
+  <t>Sućurac</t>
+  <q>Sućurac</q>
+</n>
+<n>
+  <t>Taggia</t>
+  <q>Taggia</q>
+</n>
+<n>
+  <t>Tarvisio</t>
+  <q>Tarvisio</q>
+</n>
+<n>
+  <t>Terranuova (Arezzo)</t>
+  <q>Terranuova</q>
+</n>
+<n>
+  <t>Torino</t>
+  <q>Torino</q>
+</n>
+<n>
+  <t>Torinu</t>
+  <q>Torino</q>
+</n>
+<n>
+  <t>Tossignano</t>
+  <q>Tossignano</q>
+</n>
+<n>
+  <t>Treviso</t>
+  <q>Treviso</q>
+</n>
+<n>
+  <t>Trevisu</t>
+  <q>Treviso</q>
+</n>
+<n>
+  <t>Trogiru</t>
+  <q>Trogir</q>
+</n>
+<n>
+  <t>Trst</t>
+  <q>Trst</q>
+</n>
+<n>
+  <t>Udinama</t>
+  <q>Udine</q>
+</n>
+<n>
+  <t>Udine</t>
+  <q>Udine</q>
+</n>
+<n>
+  <t>Ugljan</t>
+  <q>Ugljan</q>
+</n>
+<n>
+  <t>Utrecht</t>
+  <q>Utrecht</q>
+</n>
+<n>
+  <t>Varšava</t>
+  <q>Varšava</q>
+</n>
+<n>
+  <t>Venosa</t>
+  <q>Venosa</q>
+</n>
+<n>
+  <t>Verona</t>
+  <q>Verona</q>
+</n>
+<n>
+  <t>Vicenza</t>
+  <q>Vicenza</q>
+</n>
+<n>
+  <t>Vicovaro (Tivoli)</t>
+  <q>Vicovaro</q>
+</n>
+</list>
+
+
+for $i in $rijeci//*:q
+let $parsed := (doc(replace($url,'RIJEC',replace($i, ' ', '+'))))
+return element lemma {
+  $i/../*:t ,
+  $i ,
+  $parsed//name ,
+  element l { attribute type { "geonames" } , data($parsed//geonameId)}
+}

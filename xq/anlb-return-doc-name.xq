@@ -1,0 +1,1 @@
+for $doc in collection('analyticneolatin') where $doc//rc[contains(.,'Hagström')] return document-uri($doc)
