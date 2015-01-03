@@ -25,7 +25,7 @@ function page:success() {
   element div { attribute class {"table"}, 
   element div { element div {attribute class {"thead"}, "Uspješno promijenjeno!"} } 
 } ,
-  element p { element a { attribute href {"imena-display?nomq=22"}, "Natrag"}, "."}
+  element p { element a { attribute href {"imena-disp2"}, "Natrag"}, "."}
 }
 </blockquote>
      <p/>
