@@ -1,9 +1,20 @@
-body {
-font-family: 'Courier New', Courier, monospace;
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+.wrapper {
+    height:     auto;       /* These two lines were the key. */
+    min-height: 100%
+    /*overflow:   hidden;*/ /* Do not use this, it crops in small browsers. */
+    margin:     0px auto;
+    padding:    0px auto;
+ }
+ 
 p.subtitle {
         font-size: large;
-font-style:italic;
 color:#999966;
 }
 span.fin {
