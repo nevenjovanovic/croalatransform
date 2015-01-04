@@ -29,7 +29,7 @@ declare function croala:abc ($slovo) {
   where starts-with(data($a/td[1]/b), $slovo)
   order by $a/td[1]/b
   return $a
-  for $a at $count in subsequence($sorted, 1, 20)
+  for $a at $count in subsequence($sorted, 1, 100)
   return
   element tr { 
   element td { data($a/td[1]/b) } ,
