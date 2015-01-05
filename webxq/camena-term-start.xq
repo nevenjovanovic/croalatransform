@@ -97,7 +97,7 @@ element div {
       attribute class {"intro-text"},
     "In the browser address bar,",
     element br {} ,
-    "any capital letter gets a list of terms: ", 
+    "any capital letter gets a list of terms, e.g: ", 
         element br {} ,
     element i { attribute class { "fa fa-toggle-right fa-fw"} } , 
 	element a { attribute href {"camenatermini-letter/A"} , "camenatermini-letter/A" } ,
