@@ -1,4 +1,3 @@
-import module namespace rest = "http://exquery.org/ns/restxq";
 declare namespace page = 'http://basex.org/examples/web-page';
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare default element namespace "http://www.tei-c.org/ns/1.0";

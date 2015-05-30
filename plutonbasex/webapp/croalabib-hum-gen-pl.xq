@@ -1,0 +1,1499 @@
+import module namespace rest = "http://exquery.org/ns/restxq";
+declare namespace page = 'http://basex.org/examples/web-page';
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+declare default element namespace "http://www.tei-c.org/ns/1.0";
+declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
+declare option output:doctype-system  "http://www.w3.org/TR/html4/loose.dtd";
+declare option output:doctype-public "-//W3C//DTD HTML 4.01 Transitional//EN";
+declare option output:omit-xml-declaration "no";
+declare option output:media-type "text/html";
+declare option output:method "html";
+declare %rest:GET %rest:POST %rest:path("croalabib-humgenpl")
+function page:croalabib-humgenpl() { 
+
+(: Present an cities and generations page :)
+(: Output result as a HTML page :)
+(: Output date using Linux 'date -I' command :)
+
+
+
+(: HTML template starts here :)
+
+<html>
+<head><title>CroalaBib: saecula et civitates aetatis humanisticae</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" href="static/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="static/croalabib.css"/>
+</head>
+
+<body text="#000000">
+<h1>CroalaBib: saecula et civitates aetatis humanisticae</h1>
+
+<p><a href="http://www.ffzg.unizg.hr/klafil/dokuwiki/doku.php/z:croatica-et-tyrolensia">Croatica et Tyrolensia</a>, { replace(proc:system('date', '-I'), '\n', '') }. Sequere "Auctores" ut nomina videas.</p>
+
+{
+(: The actual XQuery starts here :)
+element table { 
+element thead {
+element tr {
+element td { "Aetas" } , element td {"Civitas"} , element td { attribute class {"broj"} , "Auctores" }
+}
+},
+let $a :=
+for $p in collection("croalabib")//*:listPerson[@type="croala.auctores"]/*:person[*:floruit/@period contains text {"15xx", "14xx"}]
+let $broj :=
+<nos>
+<ent>
+  <crogeo>1269750</crogeo>
+  <name>India</name>
+</ent>
+<ent>
+  <crogeo>146669</crogeo>
+  <name>Cyprus</name>
+</ent>
+<ent>
+  <crogeo>1489530</crogeo>
+  <name>Tobolsk</name>
+</ent>
+<ent>
+  <crogeo>2267057</crogeo>
+  <name>Lisbon</name>
+</ent>
+<ent>
+  <crogeo>2268406</crogeo>
+  <name>Evora</name>
+</ent>
+<ent>
+  <crogeo>2510769</crogeo>
+  <name>Spain</name>
+</ent>
+<ent>
+  <crogeo>2523083</crogeo>
+  <name>Syracuse</name>
+</ent>
+<ent>
+  <crogeo>2523286</crogeo>
+  <name>Santa Severina</name>
+</ent>
+<ent>
+  <crogeo>2635167</crogeo>
+  <name>United Kingdom</name>
+</ent>
+<ent>
+  <crogeo>2640729</crogeo>
+  <name>Oxford</name>
+</ent>
+<ent>
+  <crogeo>2643743</crogeo>
+  <name>London</name>
+</ent>
+<ent>
+  <crogeo>2661604</crogeo>
+  <name>Basel</name>
+</ent>
+<ent>
+  <crogeo>2740637</crogeo>
+  <name>Coimbra</name>
+</ent>
+<ent>
+  <crogeo>2745912</crogeo>
+  <name>Utrecht</name>
+</ent>
+<ent>
+  <crogeo>2761369</crogeo>
+  <name>Vienna</name>
+</ent>
+<ent>
+  <crogeo>2764766</crogeo>
+  <name>Spitzzicken</name>
+</ent>
+<ent>
+  <crogeo>2767799</crogeo>
+  <name>Regelsbrunn</name>
+</ent>
+<ent>
+  <crogeo>2772649</crogeo>
+  <name>Leoben</name>
+</ent>
+<ent>
+  <crogeo>2778067</crogeo>
+  <name>Graz</name>
+</ent>
+<ent>
+  <crogeo>2792482</crogeo>
+  <name>Leuven</name>
+</ent>
+<ent>
+  <crogeo>2802361</crogeo>
+  <name>Belgium</name>
+</ent>
+<ent>
+  <crogeo>281184</crogeo>
+  <name>Jerusalem</name>
+</ent>
+<ent>
+  <crogeo>2820860</crogeo>
+  <name>Tübingen</name>
+</ent>
+<ent>
+  <crogeo>2861650</crogeo>
+  <name>Nuremberg</name>
+</ent>
+<ent>
+  <crogeo>2867714</crogeo>
+  <name>Munich</name>
+</ent>
+<ent>
+  <crogeo>2885679</crogeo>
+  <name>Konstanz</name>
+</ent>
+<ent>
+  <crogeo>2886242</crogeo>
+  <name>Cologne</name>
+</ent>
+<ent>
+  <crogeo>2895992</crogeo>
+  <name>Ingolstadt</name>
+</ent>
+<ent>
+  <crogeo>2907911</crogeo>
+  <name>Heidelberg</name>
+</ent>
+<ent>
+  <crogeo>2917493</crogeo>
+  <name>Griebo</name>
+</ent>
+<ent>
+  <crogeo>2954172</crogeo>
+  <name>Augsburg</name>
+</ent>
+<ent>
+  <crogeo>2972191</crogeo>
+  <name>Tours</name>
+</ent>
+<ent>
+  <crogeo>298795</crogeo>
+  <name>Turkey</name>
+</ent>
+<ent>
+  <crogeo>2988507</crogeo>
+  <name>Paris</name>
+</ent>
+<ent>
+  <crogeo>2996944</crogeo>
+  <name>Lyon</name>
+</ent>
+<ent>
+  <crogeo>3008163</crogeo>
+  <name>La Mercerie</name>
+</ent>
+<ent>
+  <crogeo>3017382</crogeo>
+  <name>France</name>
+</ent>
+<ent>
+  <crogeo>3035681</crogeo>
+  <name>Avignon</name>
+</ent>
+<ent>
+  <crogeo>3042929</crogeo>
+  <name>Veszprém</name>
+</ent>
+<ent>
+  <crogeo>3043293</crogeo>
+  <name>Vác</name>
+</ent>
+<ent>
+  <crogeo>3043845</crogeo>
+  <name>Tolna megye</name>
+</ent>
+<ent>
+  <crogeo>3043849</crogeo>
+  <name>Tolna</name>
+</ent>
+<ent>
+  <crogeo>3044499</crogeo>
+  <name>Sziget</name>
+</ent>
+<ent>
+  <crogeo>3045901</crogeo>
+  <name>Remete</name>
+</ent>
+<ent>
+  <crogeo>3046526</crogeo>
+  <name>Pécs</name>
+</ent>
+<ent>
+  <crogeo>3048121</crogeo>
+  <name>Mexikó</name>
+</ent>
+<ent>
+  <crogeo>3051310</crogeo>
+  <name>Horvátzsidány</name>
+</ent>
+<ent>
+  <crogeo>3052009</crogeo>
+  <name>Győr</name>
+</ent>
+<ent>
+  <crogeo>3053163</crogeo>
+  <name>Esztergom</name>
+</ent>
+<ent>
+  <crogeo>3054643</crogeo>
+  <name>Budapest</name>
+</ent>
+<ent>
+  <crogeo>3055744</crogeo>
+  <name>Bács-Kiskun</name>
+</ent>
+<ent>
+  <crogeo>3056889</crogeo>
+  <name>Veľké Čaníkovce</name>
+</ent>
+<ent>
+  <crogeo>3057124</crogeo>
+  <name>Trnava</name>
+</ent>
+<ent>
+  <crogeo>3057140</crogeo>
+  <name>Trenčín</name>
+</ent>
+<ent>
+  <crogeo>3057629</crogeo>
+  <name>Skalica District</name>
+</ent>
+<ent>
+  <crogeo>3060972</crogeo>
+  <name>Bratislava</name>
+</ent>
+<ent>
+  <crogeo>3061184</crogeo>
+  <name>Banská Štiavnica</name>
+</ent>
+<ent>
+  <crogeo>3067696</crogeo>
+  <name>Prague</name>
+</ent>
+<ent>
+  <crogeo>3070310</crogeo>
+  <name>Moravský Krumlov</name>
+</ent>
+<ent>
+  <crogeo>3094802</crogeo>
+  <name>Krakow</name>
+</ent>
+<ent>
+  <crogeo>3111108</crogeo>
+  <name>Salamanca</name>
+</ent>
+<ent>
+  <crogeo>3117814</crogeo>
+  <name>Lugo</name>
+</ent>
+<ent>
+  <crogeo>3128760</crogeo>
+  <name>Barcelona</name>
+</ent>
+<ent>
+  <crogeo>3164028</crogeo>
+  <name>Vittorio Veneto</name>
+</ent>
+<ent>
+  <crogeo>3164039</crogeo>
+  <name>Viterbo</name>
+</ent>
+<ent>
+  <crogeo>3164394</crogeo>
+  <name>Vicovaro</name>
+</ent>
+<ent>
+  <crogeo>3164419</crogeo>
+  <name>Vicenza</name>
+</ent>
+<ent>
+  <crogeo>3164527</crogeo>
+  <name>Verona</name>
+</ent>
+<ent>
+  <crogeo>3164592</crogeo>
+  <name>Venosa</name>
+</ent>
+<ent>
+  <crogeo>3164603</crogeo>
+  <name>Venice</name>
+</ent>
+<ent>
+  <crogeo>3164604</crogeo>
+  <name>Veneto</name>
+</ent>
+<ent>
+  <crogeo>3164670</crogeo>
+  <name>Vatican City</name>
+</ent>
+<ent>
+  <crogeo>3165035</crogeo>
+  <name>Urbino</name>
+</ent>
+<ent>
+  <crogeo>3165072</crogeo>
+  <name>Udine</name>
+</ent>
+<ent>
+  <crogeo>3165185</crogeo>
+  <name>Trieste</name>
+</ent>
+<ent>
+  <crogeo>3165201</crogeo>
+  <name>Treviso</name>
+</ent>
+<ent>
+  <crogeo>3165243</crogeo>
+  <name>Trento</name>
+</ent>
+<ent>
+  <crogeo>3165524</crogeo>
+  <name>Turin</name>
+</ent>
+<ent>
+  <crogeo>3165624</crogeo>
+  <name>Tivoli</name>
+</ent>
+<ent>
+  <crogeo>3165771</crogeo>
+  <name>Terni</name>
+</ent>
+<ent>
+  <crogeo>3165912</crogeo>
+  <name>Tarvisio</name>
+</ent>
+<ent>
+  <crogeo>3165993</crogeo>
+  <name>Taggia</name>
+</ent>
+<ent>
+  <crogeo>3166034</crogeo>
+  <name>Sulmona</name>
+</ent>
+<ent>
+  <crogeo>3166236</crogeo>
+  <name>Spoleto</name>
+</ent>
+<ent>
+  <crogeo>3166399</crogeo>
+  <name>Soncino</name>
+</ent>
+<ent>
+  <crogeo>3166413</crogeo>
+  <name>Solto Collina</name>
+</ent>
+<ent>
+  <crogeo>3166548</crogeo>
+  <name>Siena</name>
+</ent>
+<ent>
+  <crogeo>3166740</crogeo>
+  <name>Senigallia</name>
+</ent>
+<ent>
+  <crogeo>3166917</crogeo>
+  <name>Schio</name>
+</ent>
+<ent>
+  <crogeo>3167032</crogeo>
+  <name>Savignano Irpino</name>
+</ent>
+<ent>
+  <crogeo>3167068</crogeo>
+  <name>Sassoferrato</name>
+</ent>
+<ent>
+  <crogeo>3167110</crogeo>
+  <name>Sarsina</name>
+</ent>
+<ent>
+  <crogeo>3167333</crogeo>
+  <name>Sant Elpidio a Mare</name>
+</ent>
+<ent>
+  <crogeo>3168438</crogeo>
+  <name>San Daniele del Friuli</name>
+</ent>
+<ent>
+  <crogeo>3168677</crogeo>
+  <name>Penisola Salentina</name>
+</ent>
+<ent>
+  <crogeo>3168759</crogeo>
+  <name>Sabbio Chiese</name>
+</ent>
+<ent>
+  <crogeo>3168843</crogeo>
+  <name>Rovigo</name>
+</ent>
+<ent>
+  <crogeo>3169070</crogeo>
+  <name>Rome</name>
+</ent>
+<ent>
+  <crogeo>3169361</crogeo>
+  <name>Rimini</name>
+</ent>
+<ent>
+  <crogeo>3169522</crogeo>
+  <name>Reggio nell Emilia</name>
+</ent>
+<ent>
+  <crogeo>3169540</crogeo>
+  <name>Recanati</name>
+</ent>
+<ent>
+  <crogeo>3169561</crogeo>
+  <name>Ravenna</name>
+</ent>
+<ent>
+  <crogeo>3169921</crogeo>
+  <name>Prato</name>
+</ent>
+<ent>
+  <crogeo>3170086</crogeo>
+  <name>Portogruaro</name>
+</ent>
+<ent>
+  <crogeo>3170408</crogeo>
+  <name>Poirino</name>
+</ent>
+<ent>
+  <crogeo>3170621</crogeo>
+  <name>Pistoia</name>
+</ent>
+<ent>
+  <crogeo>3170647</crogeo>
+  <name>Pisa</name>
+</ent>
+<ent>
+  <crogeo>3171173</crogeo>
+  <name>Pesaro</name>
+</ent>
+<ent>
+  <crogeo>3171180</crogeo>
+  <name>Perugia</name>
+</ent>
+<ent>
+  <crogeo>3171366</crogeo>
+  <name>Pavia</name>
+</ent>
+<ent>
+  <crogeo>3171457</crogeo>
+  <name>Parma</name>
+</ent>
+<ent>
+  <crogeo>3171728</crogeo>
+  <name>Padua</name>
+</ent>
+<ent>
+  <crogeo>3172116</crogeo>
+  <name>Oderzo</name>
+</ent>
+<ent>
+  <crogeo>3172393</crogeo>
+  <name>Gulf of Naples</name>
+</ent>
+<ent>
+  <crogeo>3172394</crogeo>
+  <name>Naples</name>
+</ent>
+<ent>
+  <crogeo>3172456</crogeo>
+  <name>Murano</name>
+</ent>
+<ent>
+  <crogeo>3172794</crogeo>
+  <name>Montepulciano</name>
+</ent>
+<ent>
+  <crogeo>3172828</crogeo>
+  <name>Montemurlo</name>
+</ent>
+<ent>
+  <crogeo>3172931</crogeo>
+  <name>Montefiascone</name>
+</ent>
+<ent>
+  <crogeo>3173331</crogeo>
+  <name>Modena</name>
+</ent>
+<ent>
+  <crogeo>3173435</crogeo>
+  <name>Milan</name>
+</ent>
+<ent>
+  <crogeo>3173560</crogeo>
+  <name>Mercato San Severino</name>
+</ent>
+<ent>
+  <crogeo>3173721</crogeo>
+  <name>Matera</name>
+</ent>
+<ent>
+  <crogeo>3173875</crogeo>
+  <name>Marradi</name>
+</ent>
+<ent>
+  <crogeo>3174051</crogeo>
+  <name>Mantova</name>
+</ent>
+<ent>
+  <crogeo>3174380</crogeo>
+  <name>Macerata</name>
+</ent>
+<ent>
+  <crogeo>3174530</crogeo>
+  <name>Lucca</name>
+</ent>
+<ent>
+  <crogeo>3174638</crogeo>
+  <name>Lodi</name>
+</ent>
+<ent>
+  <crogeo>3174659</crogeo>
+  <name>Leghorn</name>
+</ent>
+<ent>
+  <crogeo>3174945</crogeo>
+  <name>Lecco</name>
+</ent>
+<ent>
+  <crogeo>3174953</crogeo>
+  <name>Lecce</name>
+</ent>
+<ent>
+  <crogeo>3175034</crogeo>
+  <name>Lauria</name>
+</ent>
+<ent>
+  <crogeo>3175395</crogeo>
+  <name>Italy</name>
+</ent>
+<ent>
+  <crogeo>3175687</crogeo>
+  <name>Gubbio</name>
+</ent>
+<ent>
+  <crogeo>3175986</crogeo>
+  <name>Gorizia</name>
+</ent>
+<ent>
+  <crogeo>3176219</crogeo>
+  <name>Genoa</name>
+</ent>
+<ent>
+  <crogeo>3176438</crogeo>
+  <name>Gaeta</name>
+</ent>
+<ent>
+  <crogeo>3176525</crogeo>
+  <name>Friuli Venezia Giulia</name>
+</ent>
+<ent>
+  <crogeo>3176746</crogeo>
+  <name>Forlì</name>
+</ent>
+<ent>
+  <crogeo>3176959</crogeo>
+  <name>Florence</name>
+</ent>
+<ent>
+  <crogeo>3177009</crogeo>
+  <name>Figline Valdarno</name>
+</ent>
+<ent>
+  <crogeo>3177099</crogeo>
+  <name>Fermo</name>
+</ent>
+<ent>
+  <crogeo>3177120</crogeo>
+  <name>Feltre</name>
+</ent>
+<ent>
+  <crogeo>3177219</crogeo>
+  <name>Fano</name>
+</ent>
+<ent>
+  <crogeo>3177596</crogeo>
+  <name>Diano d Alba</name>
+</ent>
+<ent>
+  <crogeo>3177838</crogeo>
+  <name>Cremona</name>
+</ent>
+<ent>
+  <crogeo>3178957</crogeo>
+  <name>Cesena</name>
+</ent>
+<ent>
+  <crogeo>3179024</crogeo>
+  <name>Certaldo</name>
+</ent>
+<ent>
+  <crogeo>3179684</crogeo>
+  <name>Castelfranco Veneto</name>
+</ent>
+<ent>
+  <crogeo>3180208</crogeo>
+  <name>Casale Monferrato</name>
+</ent>
+<ent>
+  <crogeo>3180442</crogeo>
+  <name>Carpignano Salentino</name>
+</ent>
+<ent>
+  <crogeo>3181277</crogeo>
+  <name>Cagli</name>
+</ent>
+<ent>
+  <crogeo>3181554</crogeo>
+  <name>Brescia</name>
+</ent>
+<ent>
+  <crogeo>3181747</crogeo>
+  <name>Borgo Tossignano</name>
+</ent>
+<ent>
+  <crogeo>3181928</crogeo>
+  <name>Bologna</name>
+</ent>
+<ent>
+  <crogeo>3181970</crogeo>
+  <name>Bobbio</name>
+</ent>
+<ent>
+  <crogeo>3182164</crogeo>
+  <name>Bergamo</name>
+</ent>
+<ent>
+  <crogeo>3182181</crogeo>
+  <name>Bene Vagienna</name>
+</ent>
+<ent>
+  <crogeo>3182340</crogeo>
+  <name>Barletta</name>
+</ent>
+<ent>
+  <crogeo>3182351</crogeo>
+  <name>Bari</name>
+</ent>
+<ent>
+  <crogeo>3182364</crogeo>
+  <name>Bardolino</name>
+</ent>
+<ent>
+  <crogeo>3182494</crogeo>
+  <name>Bagnoregio</name>
+</ent>
+<ent>
+  <crogeo>3182552</crogeo>
+  <name>Bagnacavallo</name>
+</ent>
+<ent>
+  <crogeo>3182714</crogeo>
+  <name>Asti</name>
+</ent>
+<ent>
+  <crogeo>3182749</crogeo>
+  <name>Ascoli Piceno</name>
+</ent>
+<ent>
+  <crogeo>3182805</crogeo>
+  <name>Arquà Petrarca</name>
+</ent>
+<ent>
+  <crogeo>3182812</crogeo>
+  <name>Arona</name>
+</ent>
+<ent>
+  <crogeo>3182884</crogeo>
+  <name>Arezzo</name>
+</ent>
+<ent>
+  <crogeo>3182943</crogeo>
+  <name>Aquileia</name>
+</ent>
+<ent>
+  <crogeo>3183089</crogeo>
+  <name>Ancona</name>
+</ent>
+<ent>
+  <crogeo>3183299</crogeo>
+  <name>Alessandria</name>
+</ent>
+<ent>
+  <crogeo>3183314</crogeo>
+  <name>Albissola Marina</name>
+</ent>
+<ent>
+  <crogeo>3183356</crogeo>
+  <name>Albano Laziale</name>
+</ent>
+<ent>
+  <crogeo>3184081</crogeo>
+  <name>Shkodër</name>
+</ent>
+<ent>
+  <crogeo>3186233</crogeo>
+  <name>Vranjic</name>
+</ent>
+<ent>
+  <crogeo>3186331</crogeo>
+  <name>Žrnovo</name>
+</ent>
+<ent>
+  <crogeo>3186794</crogeo>
+  <name>Zaostrog</name>
+</ent>
+<ent>
+  <crogeo>3186886</crogeo>
+  <name>Zagreb</name>
+</ent>
+<ent>
+  <crogeo>3186952</crogeo>
+  <name>Zadar</name>
+</ent>
+<ent>
+  <crogeo>3187047</crogeo>
+  <name>Vukovar</name>
+</ent>
+<ent>
+  <crogeo>3187063</crogeo>
+  <name>Vukmanić</name>
+</ent>
+<ent>
+  <crogeo>3187685</crogeo>
+  <name>Vis</name>
+</ent>
+<ent>
+  <crogeo>3187694</crogeo>
+  <name>Virovitica</name>
+</ent>
+<ent>
+  <crogeo>3187716</crogeo>
+  <name>Vinodol</name>
+</ent>
+<ent>
+  <crogeo>3187793</crogeo>
+  <name>Vidovec</name>
+</ent>
+<ent>
+  <crogeo>3188383</crogeo>
+  <name>Varaždin</name>
+</ent>
+<ent>
+  <crogeo>3188395</crogeo>
+  <name>Valpovo</name>
+</ent>
+<ent>
+  <crogeo>3188538</crogeo>
+  <name>Ugljan</name>
+</ent>
+<ent>
+  <crogeo>3188763</crogeo>
+  <name>Trogir</name>
+</ent>
+<ent>
+  <crogeo>3188893</crogeo>
+  <name>Trebinje</name>
+</ent>
+<ent>
+  <crogeo>3188924</crogeo>
+  <name>Travnik</name>
+</ent>
+<ent>
+  <crogeo>3188941</crogeo>
+  <name>Trakošćan</name>
+</ent>
+<ent>
+  <crogeo>3189041</crogeo>
+  <name>Tolisa</name>
+</ent>
+<ent>
+  <crogeo>3189096</crogeo>
+  <name>Tišina Kaptolska</name>
+</ent>
+<ent>
+  <crogeo>3189728</crogeo>
+  <name>Štrigova</name>
+</ent>
+<ent>
+  <crogeo>3189810</crogeo>
+  <name>Ston</name>
+</ent>
+<ent>
+  <crogeo>3190159</crogeo>
+  <name>Srebrenica</name>
+</ent>
+<ent>
+  <crogeo>3190261</crogeo>
+  <name>Split</name>
+</ent>
+<ent>
+  <crogeo>3190345</crogeo>
+  <name>Šolta</name>
+</ent>
+<ent>
+  <crogeo>3190359</crogeo>
+  <name>Solin</name>
+</ent>
+<ent>
+  <crogeo>3190586</crogeo>
+  <name>Slavonski Brod</name>
+</ent>
+<ent>
+  <crogeo>3190589</crogeo>
+  <name>Požega</name>
+</ent>
+<ent>
+  <crogeo>3190641</crogeo>
+  <name>Slano</name>
+</ent>
+<ent>
+  <crogeo>3190692</crogeo>
+  <name>Skradin</name>
+</ent>
+<ent>
+  <crogeo>3190813</crogeo>
+  <name>Sisak</name>
+</ent>
+<ent>
+  <crogeo>3190865</crogeo>
+  <name>Sinj</name>
+</ent>
+<ent>
+  <crogeo>3190898</crogeo>
+  <name>Silba</name>
+</ent>
+<ent>
+  <crogeo>3190917</crogeo>
+  <name>Sigetec Ludbreški</name>
+</ent>
+<ent>
+  <crogeo>3190941</crogeo>
+  <name>Šibenik</name>
+</ent>
+<ent>
+  <crogeo>3191048</crogeo>
+  <name>Šenkovec</name>
+</ent>
+<ent>
+  <crogeo>3191055</crogeo>
+  <name>Senj</name>
+</ent>
+<ent>
+  <crogeo>3191281</crogeo>
+  <name>Sarajevo</name>
+</ent>
+<ent>
+  <crogeo>3191316</crogeo>
+  <name>Samobor</name>
+</ent>
+<ent>
+  <crogeo>3191648</crogeo>
+  <name>Rijeka</name>
+</ent>
+<ent>
+  <crogeo>3191743</crogeo>
+  <name>Remete</name>
+</ent>
+<ent>
+  <crogeo>3191948</crogeo>
+  <name>Rasinja</name>
+</ent>
+<ent>
+  <crogeo>3191983</crogeo>
+  <name>Rama</name>
+</ent>
+<ent>
+  <crogeo>3192037</crogeo>
+  <name>Rajevo Selo</name>
+</ent>
+<ent>
+  <crogeo>3192178</crogeo>
+  <name>Rab</name>
+</ent>
+<ent>
+  <crogeo>3192224</crogeo>
+  <name>Pula</name>
+</ent>
+<ent>
+  <crogeo>3192231</crogeo>
+  <name>Pučišća</name>
+</ent>
+<ent>
+  <crogeo>3192232</crogeo>
+  <name>Luka Pučišća</name>
+</ent>
+<ent>
+  <crogeo>3192241</crogeo>
+  <name>Ptuj</name>
+</ent>
+<ent>
+  <crogeo>3192662</crogeo>
+  <name>Potočani</name>
+</ent>
+<ent>
+  <crogeo>3192699</crogeo>
+  <name>Poreč</name>
+</ent>
+<ent>
+  <crogeo>3192850</crogeo>
+  <name>Pokupsko</name>
+</ent>
+<ent>
+  <crogeo>3193150</crogeo>
+  <name>Ploče</name>
+</ent>
+<ent>
+  <crogeo>3193406</crogeo>
+  <name>Petrovaradin</name>
+</ent>
+<ent>
+  <crogeo>3193419</crogeo>
+  <name>Petrinja Općina</name>
+</ent>
+<ent>
+  <crogeo>3193504</crogeo>
+  <name>Perast</name>
+</ent>
+<ent>
+  <crogeo>3193533</crogeo>
+  <name>Pećno</name>
+</ent>
+<ent>
+  <crogeo>3193561</crogeo>
+  <name>Pazin</name>
+</ent>
+<ent>
+  <crogeo>3193706</crogeo>
+  <name>Pakrac</name>
+</ent>
+<ent>
+  <crogeo>3193726</crogeo>
+  <name>Pag</name>
+</ent>
+<ent>
+  <crogeo>3193885</crogeo>
+  <name>Osor</name>
+</ent>
+<ent>
+  <crogeo>3193935</crogeo>
+  <name>Osijek</name>
+</ent>
+<ent>
+  <crogeo>3194010</crogeo>
+  <name>Oriovac</name>
+</ent>
+<ent>
+  <crogeo>3194029</crogeo>
+  <name>Orebić</name>
+</ent>
+<ent>
+  <crogeo>3194252</crogeo>
+  <name>Obrh pri Dragatušu</name>
+</ent>
+<ent>
+  <crogeo>3194355</crogeo>
+  <name>Novi Vinodolski</name>
+</ent>
+<ent>
+  <crogeo>3194360</crogeo>
+  <name>Novi Sad</name>
+</ent>
+<ent>
+  <crogeo>3194451</crogeo>
+  <name>Nova Gorica</name>
+</ent>
+<ent>
+  <crogeo>3194524</crogeo>
+  <name>Nerežišće</name>
+</ent>
+<ent>
+  <crogeo>3194559</crogeo>
+  <name>Nedelišće</name>
+</ent>
+<ent>
+  <crogeo>3194581</crogeo>
+  <name>Našice</name>
+</ent>
+<ent>
+  <crogeo>3194828</crogeo>
+  <name>Mostar</name>
+</ent>
+<ent>
+  <crogeo>3194874</crogeo>
+  <name>Moravče</name>
+</ent>
+<ent>
+  <crogeo>3194936</crogeo>
+  <name>Modruš</name>
+</ent>
+<ent>
+  <crogeo>3194965</crogeo>
+  <name>Mljet</name>
+</ent>
+<ent>
+  <crogeo>3195890</crogeo>
+  <name>Makarska</name>
+</ent>
+<ent>
+  <crogeo>3196198</crogeo>
+  <name>Otok Lopud</name>
+</ent>
+<ent>
+  <crogeo>3196359</crogeo>
+  <name>Ljubljana</name>
+</ent>
+<ent>
+  <crogeo>3196428</crogeo>
+  <name>Široki Brijeg</name>
+</ent>
+<ent>
+  <crogeo>3196552</crogeo>
+  <name>Lipa</name>
+</ent>
+<ent>
+  <crogeo>3196578</crogeo>
+  <name>Lijeva Martinska Ves</name>
+</ent>
+<ent>
+  <crogeo>3196657</crogeo>
+  <name>Lepoglava</name>
+</ent>
+<ent>
+  <crogeo>3196752</crogeo>
+  <name>Lastovo</name>
+</ent>
+<ent>
+  <crogeo>3196834</crogeo>
+  <name>Labin</name>
+</ent>
+<ent>
+  <crogeo>3197206</crogeo>
+  <name>Krk</name>
+</ent>
+<ent>
+  <crogeo>3197230</crogeo>
+  <name>Križevci</name>
+</ent>
+<ent>
+  <crogeo>3197296</crogeo>
+  <name>Kreševo</name>
+</ent>
+<ent>
+  <crogeo>3197369</crogeo>
+  <name>Krapina</name>
+</ent>
+<ent>
+  <crogeo>3197399</crogeo>
+  <name>Kraljevska Sutjeska</name>
+</ent>
+<ent>
+  <crogeo>3197538</crogeo>
+  <name>Kotor</name>
+</ent>
+<ent>
+  <crogeo>3197710</crogeo>
+  <name>Korčula</name>
+</ent>
+<ent>
+  <crogeo>3197753</crogeo>
+  <name>Koper</name>
+</ent>
+<ent>
+  <crogeo>3197810</crogeo>
+  <name>Konavli</name>
+</ent>
+<ent>
+  <crogeo>3197986</crogeo>
+  <name>Knin</name>
+</ent>
+<ent>
+  <crogeo>3198103</crogeo>
+  <name>Klanjec</name>
+</ent>
+<ent>
+  <crogeo>3198210</crogeo>
+  <name>Kaštel Sućurac</name>
+</ent>
+<ent>
+  <crogeo>3198213</crogeo>
+  <name>Kastel Stafilic</name>
+</ent>
+<ent>
+  <crogeo>3198259</crogeo>
+  <name>Karlovac</name>
+</ent>
+<ent>
+  <crogeo>3198450</crogeo>
+  <name>Kalinovac</name>
+</ent>
+<ent>
+  <crogeo>3198799</crogeo>
+  <name>Jastrebarsko</name>
+</ent>
+<ent>
+  <crogeo>3199069</crogeo>
+  <name>Ivanić-Grad</name>
+</ent>
+<ent>
+  <crogeo>3199177</crogeo>
+  <name>Hvar</name>
+</ent>
+<ent>
+  <crogeo>3199180</crogeo>
+  <name>Hvar</name>
+</ent>
+<ent>
+  <crogeo>3199387</crogeo>
+  <name>Herešin</name>
+</ent>
+<ent>
+  <crogeo>3199641</crogeo>
+  <name>Grbalj</name>
+</ent>
+<ent>
+  <crogeo>3199697</crogeo>
+  <name>Gradišča</name>
+</ent>
+<ent>
+  <crogeo>3200830</crogeo>
+  <name>Fojnica</name>
+</ent>
+<ent>
+  <crogeo>3200887</crogeo>
+  <name>Erdelj</name>
+</ent>
+<ent>
+  <crogeo>3200930</crogeo>
+  <name>Tomislavgrad</name>
+</ent>
+<ent>
+  <crogeo>3201047</crogeo>
+  <name>Dubrovnik</name>
+</ent>
+<ent>
+  <crogeo>3201571</crogeo>
+  <name>Donje Dubrave</name>
+</ent>
+<ent>
+  <crogeo>3202210</crogeo>
+  <name>Dalmatia</name>
+</ent>
+<ent>
+  <crogeo>3202220</crogeo>
+  <name>Đakovo</name>
+</ent>
+<ent>
+  <crogeo>3202326</crogeo>
+  <name>Croatia</name>
+</ent>
+<ent>
+  <crogeo>3202507</crogeo>
+  <name>Crikvenica</name>
+</ent>
+<ent>
+  <crogeo>3202523</crogeo>
+  <name>Cres</name>
+</ent>
+<ent>
+  <crogeo>3202820</crogeo>
+  <name>Čazma</name>
+</ent>
+<ent>
+  <crogeo>3202888</crogeo>
+  <name>Čakovec</name>
+</ent>
+<ent>
+  <crogeo>3203292</crogeo>
+  <name>Brist</name>
+</ent>
+<ent>
+  <crogeo>3203315</crogeo>
+  <name>Bribir</name>
+</ent>
+<ent>
+  <crogeo>3203487</crogeo>
+  <name>Brdovec</name>
+</ent>
+<ent>
+  <crogeo>3203594</crogeo>
+  <name>Brač</name>
+</ent>
+<ent>
+  <crogeo>3203599</crogeo>
+  <name>Božjakovina</name>
+</ent>
+<ent>
+  <crogeo>3204509</crogeo>
+  <name>Bar</name>
+</ent>
+<ent>
+  <crogeo>3205300</crogeo>
+  <name>Slavonija</name>
+</ent>
+<ent>
+  <crogeo>3215125</crogeo>
+  <name>Okić</name>
+</ent>
+<ent>
+  <crogeo>3216446</crogeo>
+  <name>Nin</name>
+</ent>
+<ent>
+  <crogeo>3239105</crogeo>
+  <name>Kranjska Gora</name>
+</ent>
+<ent>
+  <crogeo>3239241</crogeo>
+  <name>Občina Podčetrtek</name>
+</ent>
+<ent>
+  <crogeo>3250057</crogeo>
+  <name>Veliki Tabor</name>
+</ent>
+<ent>
+  <crogeo>3277605</crogeo>
+  <name>Bosnia and Herzegovina</name>
+</ent>
+<ent>
+  <crogeo>3337518</crogeo>
+  <name>Koprivničko-Križevačka Županija</name>
+</ent>
+<ent>
+  <crogeo>3337521</crogeo>
+  <name>Međimurska Županija</name>
+</ent>
+<ent>
+  <crogeo>3337529</crogeo>
+  <name>Vukovarsko-Srijemska Županija</name>
+</ent>
+<ent>
+  <crogeo>3344106</crogeo>
+  <name>Općina Stari Grad</name>
+</ent>
+<ent>
+  <crogeo>3344934</crogeo>
+  <name>Velika Polana</name>
+</ent>
+<ent>
+  <crogeo>357994</crogeo>
+  <name>Egypt</name>
+</ent>
+<ent>
+  <crogeo>400665</crogeo>
+  <name>Rhodes</name>
+</ent>
+<ent>
+  <crogeo>524901</crogeo>
+  <name>Moscow</name>
+</ent>
+<ent>
+  <crogeo>554234</crogeo>
+  <name>Kaliningrad</name>
+</ent>
+<ent>
+  <crogeo>555746</crogeo>
+  <name>Istra</name>
+</ent>
+<ent>
+  <crogeo>593116</crogeo>
+  <name>Vilnius</name>
+</ent>
+<ent>
+  <crogeo>6254930</crogeo>
+  <name>Palestine</name>
+</ent>
+<ent>
+  <crogeo>6255146</crogeo>
+  <name>Africa</name>
+</ent>
+<ent>
+  <crogeo>6299592</crogeo>
+  <name>Ferrara</name>
+</ent>
+<ent>
+  <crogeo>6536785</crogeo>
+  <name>Camerino</name>
+</ent>
+<ent>
+  <crogeo>6538594</crogeo>
+  <name>Terranuova Bracciolini</name>
+</ent>
+<ent>
+  <crogeo>6539930</crogeo>
+  <name>Aquileia</name>
+</ent>
+<ent>
+  <crogeo>6541649</crogeo>
+  <name>Città di Castello</name>
+</ent>
+<ent>
+  <crogeo>6542120</crogeo>
+  <name>Ferrara</name>
+</ent>
+<ent>
+  <crogeo>6542285</crogeo>
+  <name>Florence</name>
+</ent>
+<ent>
+  <crogeo>6621589</crogeo>
+  <name>Portese</name>
+</ent>
+<ent>
+  <crogeo>6697802</crogeo>
+  <name>Crete</name>
+</ent>
+<ent>
+  <crogeo>6697993</crogeo>
+  <name>Baia Mare</name>
+</ent>
+<ent>
+  <crogeo>671768</crogeo>
+  <name>Oradea</name>
+</ent>
+<ent>
+  <crogeo>681290</crogeo>
+  <name>Cluj-Napoca</name>
+</ent>
+<ent>
+  <crogeo>682428</crogeo>
+  <name>Cenad</name>
+</ent>
+<ent>
+  <crogeo>686254</crogeo>
+  <name>Arad</name>
+</ent>
+<ent>
+  <crogeo>690548</crogeo>
+  <name>Uzhhorod</name>
+</ent>
+<ent>
+  <crogeo>705122</crogeo>
+  <name>Konstantinopol</name>
+</ent>
+<ent>
+  <crogeo>715429</crogeo>
+  <name>Szeged</name>
+</ent>
+<ent>
+  <crogeo>719819</crogeo>
+  <name>Hungary</name>
+</ent>
+<ent>
+  <crogeo>721239</crogeo>
+  <name>Eger</name>
+</ent>
+<ent>
+  <crogeo>723819</crogeo>
+  <name>Prešov</name>
+</ent>
+<ent>
+  <crogeo>724443</crogeo>
+  <name>Košice</name>
+</ent>
+<ent>
+  <crogeo>7303020</crogeo>
+  <name>Wittenberg</name>
+</ent>
+<ent>
+  <crogeo>745044</crogeo>
+  <name>Istanbul</name>
+</ent>
+<ent>
+  <crogeo>756135</crogeo>
+  <name>Warsaw</name>
+</ent>
+<ent>
+  <crogeo>7590820</crogeo>
+  <name>Afrika</name>
+</ent>
+<ent>
+  <crogeo>784326</crogeo>
+  <name>Vlaška Planina</name>
+</ent>
+<ent>
+  <crogeo>788483</crogeo>
+  <name>Loret</name>
+</ent>
+<ent>
+  <crogeo>792680</crogeo>
+  <name>Belgrade</name>
+</ent>
+<ent>
+  <crogeo>798544</crogeo>
+  <name>Poland</name>
+</ent>
+<ent>
+  <crogeo>8373766</crogeo>
+  <name>Pešta</name>
+</ent>
+<ent>
+  <crogeo>8469164</crogeo>
+  <name>Careggi</name>
+</ent>
+<ent>
+  <crogeo>863912</crogeo>
+  <name>Vinica</name>
+</ent>
+</nos>
+let $dob := $p/*:floruit[@period contains text {"15xx", "14xx"}]/@period
+let $grad := if ($p/*:birth[1]/*:placeName[1]) then 
+$p/*:birth[1]/*:placeName[1]/@ref
+else if ($p/*:floruit[1]/*:placeName[1]) then
+$p/*:floruit[1]/*:placeName[1]/@ref
+else()
+group by $dob , $grad
+order by $dob, $grad
+return element tr { 
+element td { element a
+{ attribute href {$dob} ,
+replace($dob, "http://semium.org/time/", "") 
+}
+},
+element td { 
+if ($grad) then
+element a 
+{ attribute href {concat("http://www.geonames.org/", $grad)},
+distinct-values($broj/ent[crogeo contains text {$grad}]/name)
+}
+else ("DEEST CIVITAS")
+},
+element td {
+attribute class { "broj" } ,
+if (count($p) > 1) then 
+element b {count($p)}
+else if (count($p) =1) then
+count($p)
+else()
+}
+}
+
+
+return element tbody { $a ,
+element tr { 
+element td { } ,
+element td { } ,
+element td {
+attribute class { "broj" } ,
+"N = ", sum($a/td[3]) } } 
+}
+}
+}
+
+     <p/>
+<hr/>
+<div>
+<p>Croatica et Tyrolensia</p>
+</div>
+</body>
+</html>
+};
+return

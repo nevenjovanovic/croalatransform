@@ -17,14 +17,14 @@ let $head := $file/descendant::tei:teiHeader
 let $title := croala:str($head/*:fileDesc/*:titleStmt/*:title[1]/descendant::text())
 let $xpauthors := croala:str($head/tei:fileDesc/tei:titleStmt/tei:author/((tei:name union tei:persName union tei:orgName union tei:ref))/descendant::text())
 let $xpauthordates := normalize-space(string-join($head/tei:fileDesc/tei:titleStmt/tei:author/tei:date/descendant::text(), '; '))
-let $xppubplaces := normalize-space(string-join($head/tei:profileDesc/tei:creation/((tei:placeName union tei:name))/descendant::text(), '; '))
-let $year := substring($head/*:profileDesc/*:creation/*:date[1]/((@*[1])), 1, 4)
-let $createdate := $head/*:profileDesc/*:creation/*:date[1]/((@when union @from union @notBefore union @notAfter))
+let $xppubplaces := normalize-space(string-join($head/tei:profileDesc[1]/tei:creation/((tei:placeName union tei:name))/descendant::text(), '; '))
+let $year := substring($head/*:profileDesc[1]/*:creation/*:date[1]/((@*[1])), 1, 4)
+let $createdate := $head/*:profileDesc[1]/*:creation/*:date[1]/((@when union @from union @notBefore union @notAfter))
 let $extent := replace($head/*:fileDesc/*:extent, 'Mg:[A-Z]?','')
 let $xpeditors := $head/tei:fileDesc/tei:titleStmt/tei:editor/descendant::text()
-let $xpgenre := string-join($head/tei:profileDesc/tei:textClass/tei:keywords[(@scheme = "biblio/croala-catalogus-aetatum.xml#gen01")]/tei:term//text(), '; ')
-let $xpkeywords := $head/tei:profileDesc/tei:textClass/tei:keywords[(@scheme = "biblio/croala-catalogus-aetatum.xml#typ01")]/tei:term
-let $xpperiod := $head/tei:profileDesc/tei:textClass/tei:keywords[(@scheme = "biblio/croala-catalogus-aetatum.xml#aet01")]/tei:term
+let $xpgenre := string-join($head/tei:profileDesc[1]/tei:textClass/tei:keywords[(@scheme = "biblio/croala-catalogus-aetatum.xml#gen01")]/tei:term//text(), '; ')
+let $xpkeywords := $head/tei:profileDesc[1]/tei:textClass/tei:keywords[(@scheme = "biblio/croala-catalogus-aetatum.xml#typ01")]/tei:term
+let $xpperiod := $head/tei:profileDesc[1]/tei:textClass/tei:keywords[(@scheme = "biblio/croala-catalogus-aetatum.xml#aet01")]/tei:term
 let $size := file:size(string-join(('/home/neven/rad/croala-r/basex/',substring(document-uri($file), 7)),''))
 let $xpdocid := replace($head//tei:fileDesc/@xml:id, '-', '')
 

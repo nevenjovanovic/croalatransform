@@ -8,8 +8,8 @@
     <title xml:lang="eng">Digitalna biblioteka hrvatskih latinista</title>
     <title xml:lang="eng">A Digital Collection of Croatian Authors Writing in Latin</title>
     <creator xmlns="http://purl.org/dc/elements/1.1/">Croatica et Tyrolensia</creator>
-    <coverage xmlns="http://purl.org/dc/elements/1.1/" xml:lang="hrv">Primani i sekundarni izvori za istraživanje hrvatskog latinizma</coverage>
-    <description xmlns="http://purl.org/dc/elements/1.1/" xml:lang="hrv">Primani i sekundarni izvori za istraživanje hrvatskog latinizma</description>
+    <coverage xmlns="http://purl.org/dc/elements/1.1/" xml:lang="hrv">Primarni i sekundarni izvori za istraživanje hrvatskog latinizma</coverage>
+    <description xmlns="http://purl.org/dc/elements/1.1/" xml:lang="hrv">Primarni i sekundarni izvori za istraživanje hrvatskog latinizma</description>
     <coverage xmlns="http://purl.org/dc/elements/1.1/" xml:lang="lat">Fontes primarii et secundarii Latinitati Croaticae investigandae</coverage>
     <description xmlns="http://purl.org/dc/elements/1.1/" xml:lang="lat">Fontes primarii et secundarii Latinitati Croaticae investigandae</description>
     <coverage xmlns="http://purl.org/dc/elements/1.1/" xml:lang="eng">Primary and secondary sources
@@ -68,7 +68,3316 @@
       </edition>    
     </work>
   </textgroup>
-  
+  <!-- svi autori iz CroALa, automatski, stranci skupa s našima; neki nemaju kraj oznake -->
+  <!-- svima je za imena @xml:lang hrv iako su neki i lat, i na drugim jezicima -->
+  <!-- 224 unosa -->
+  <!-- fale samo organizacije -->
+  <textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Adam, redovnik</groupname>
+</textgroup>
+<textgroup projid="croala:caladamp01">
+  <groupname xml:lang="hrv">Adam Parižanin</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Alberti, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:calalbertijan03">
+  <groupname xml:lang="hrv">Alberti, Janko</groupname>
+</textgroup>
+<textgroup projid="croala:calalb02">
+  <groupname xml:lang="hrv">Alberti, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Anastazije, hrvatski biskup i kraljev kancelar</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Andrea Banda di Verona</groupname>
+</textgroup>
+<textgroup projid="croala:caland02">
+  <groupname xml:lang="hrv">Andreis, Franjo Trankvil</groupname>
+  <work projid="andreis-f-epist-1538-07-11" xml:lang="lat">
+    <title xml:lang="lat">Franciscus Andronicus Tranquillus Antonio Werancio (1538-07-11)</title>
+    <title xml:lang="hrv">Franjo Trankvil Andreis Antunu Vrančiću (1538-07-11)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Franciscus Andronicus Tranquillus Antonio Werancio (1538-07-11), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Franciscus Andronicus Tranquillus Antonio Werancio (1538-07-11), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-1538-07-11/caland02.andreis-f-epist-1538-07-11.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+           </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-1538-10-03" xml:lang="lat">
+    <title xml:lang="lat">Franciscus Andronicus Tranquillus Antonio Werancio (1538-10-03)</title>
+    <title xml:lang="hrv">Franjo Trankvil Andreis Antunu Vrančiću (1538-10-03)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Franciscus Andronicus Tranquillus Antonio Werancio (1538-10-03), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Franciscus Andronicus Tranquillus Antonio Werancio (1538-10-03), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-1538-10-03/caland02.andreis-f-epist-1538-10-03.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-1550-02-25" xml:lang="lat">
+    <title xml:lang="lat">Antonio Verantio Tranquillus Andronicus (1550-02-25)</title>
+    <title xml:lang="hrv">Trankvil Andreis Antunu Vrančiću (1550-02-25)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Antonio Verantio Tranquillus Andronicus (1550-02-25), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Antonio Verantio Tranquillus Andronicus (1550-02-25), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-1550-02-25/caland02.andreis-f-epist-1550-02-25.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-1569-10-19" xml:lang="lat">
+    <title xml:lang="lat">Ad Reverendissimum dominum Antonium Verantium Archiepiscopum Strigoniensem</title>
+    <title xml:lang="hrv">Velečasnom gospodinu Antunu Vrančiću, nadbiskupu ostrogonskom</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Ad Reverendissimum dominum Antonium Verantium Archiepiscopum Strigoniensem, versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Ad Reverendissimum dominum Antonium Verantium Archiepiscopum Strigoniensem, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-1569-10-19/caland02.andreis-f-epist-1569-10-19.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-1570-02-02" xml:lang="lat">
+    <title xml:lang="lat">Reverendissimo et observandissimo d. Domino meo Antonio Verantio Archiepiscopo Strigoniensi etc. in Hungaria</title>
+    <title xml:lang="hrv">Velečasnom i veleštovanom gospodinu, mom Gospodinu Antunu Vrančiću, nadbiskupu ostrogonskom itd.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Reverendissimo et observandissimo d. Domino meo Antonio Verantio Archiepiscopo Strigoniensi etc. in Hungaria, versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Reverendissimo et observandissimo d. Domino meo Antonio Verantio Archiepiscopo Strigoniensi etc. in Hungaria, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-1570-02-02/caland02.andreis-f-epist-1570-02-02.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-1571-06-30" xml:lang="lat">
+    <title xml:lang="lat">Ad Archiepiscopum Strigoniensem Antonium Verantium</title>
+    <title xml:lang="hrv">Ostrogonskom nadbiskupu Antunu Vrančiću</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Ad Archiepiscopum Strigoniensem Antonium Verantium, versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Ad Archiepiscopum Strigoniensem Antonium Verantium, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-1571-06-30/caland02.andreis-f-epist-1571-06-30.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-lasc" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Ianum de Lasco</title>
+    <title xml:lang="hrv">Pismo janu Laskom</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Ianum de Lasco, versio electronica, (Zagreb 2011 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Ianum de Lasco, versio electronica. Zagreb, Profil hrvatskog latinizma, lipnja 2011.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-lasc/caland02.andreis-f-epist-lasc.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1547-03-26)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1547-03-26)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1547-03-26), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1547-03-26), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1532-03-20)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1532-03-20)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1532-03-20), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1532-03-20), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[2]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-01-15)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1541-01-15)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-01-15), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-01-15), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[3]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-03-17)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1541-03-17)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-03-17), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-03-17), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[4]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-12-04)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1541-12-04)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-12-04), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1541-12-04), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[5]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1545-11-30)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1545-11-30)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1545-11-30), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1545-11-30), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[6]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1545-12-10)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1545-12-10)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1545-12-10), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1545-12-10), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[7]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1547-04-04)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1547-04-04)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1547-04-04), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1547-04-04), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[9]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1549-11-01)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1549-11-01)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1549-11-01), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1549-11-01), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[10]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1550-03-11)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1550-03-11)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1550-03-11), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1550-03-11), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[11]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1551-12-06)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1551-12-06)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1551-12-06), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1551-12-06), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[12]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1551-01-16)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1551-01-16)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1551-01-16), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1551-01-16), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[13]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1552-05-22)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1552-05-22)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1552-05-22), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1552-05-22), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[14]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-11-05)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1553-11-05)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-11-05), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-11-05), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[15]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-04-28)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1553-04-28)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-04-28), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-04-28), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[16]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-11-29)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1553-11-29)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-11-29), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1553-11-29), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[17]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1554-07-12)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1554-07-12)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1554-07-12), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1554-07-12), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[18]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1554-04-01)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1554-04-01)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1554-04-01), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1554-04-01), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[19]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1555-05-24)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1555-05-24)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1555-05-24), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1555-05-24), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[20]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist-nadasd" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Thomam Nadasdinum (1555-06-12)</title>
+    <title xml:lang="hrv">Pismo Tomi Nadaždiju (1555-06-12)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Thomam Nadasdinum (1555-06-12), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Thomam Nadasdinum (1555-06-12), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist-nadasd/caland02.andreis-f-epist-nadasd.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[21]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae III (Tranquillus Parthenius Vadiano)</title>
+    <title xml:lang="hrv">Pisma (Trankvil Partenije Vadijanu)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae III (Tranquillus Parthenius Vadiano), versio electronica, (Zagreb 2011 TEI XML)</label>
+      <description xml:lang="lat">Epistolae III (Tranquillus Parthenius Vadiano), versio electronica. Zagreb, Profil hrvatskog latinizma, studenoga 2011.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist/caland02.andreis-f-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae III (1519-01-03)</title>
+    <title xml:lang="hrv">Pisma (1519-01-03)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae III (1519-01-03), versio electronica, (Zagreb 2011 TEI XML)</label>
+      <description xml:lang="lat">Epistolae III (1519-01-03), versio electronica. Zagreb, Profil hrvatskog latinizma, studenoga 2011.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist/caland02.andreis-f-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[3]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae III (1541-01-15)</title>
+    <title xml:lang="hrv">Pisma (1541-01-15)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae III (1541-01-15), versio electronica, (Zagreb 2011 TEI XML)</label>
+      <description xml:lang="lat">Epistolae III (1541-01-15), versio electronica. Zagreb, Profil hrvatskog latinizma, studenoga 2011.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-epist/caland02.andreis-f-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[5]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-polonos" xml:lang="lat">
+    <title xml:lang="lat">Ad optimates Polonos admonitio (Ad Stanislaum comitem de Gorca)</title>
+    <title xml:lang="hrv">Opomena poljskim velikašima (Stanislavu Gorkom)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Ad optimates Polonos admonitio (Ad Stanislaum comitem de Gorca), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Ad optimates Polonos admonitio (Ad Stanislaum comitem de Gorca), versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-polonos/caland02.andreis-f-polonos.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:front">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-polonos" xml:lang="lat">
+    <title xml:lang="lat">Ad optimates Polonos admonitio (Epistola ad A. Comitem a Gorca)</title>
+    <title xml:lang="hrv">Opomena poljskim velikašima (Pismo Andriji Gorkom)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Ad optimates Polonos admonitio (Epistola ad A. Comitem a Gorca), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Ad optimates Polonos admonitio (Epistola ad A. Comitem a Gorca), versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-polonos/caland02.andreis-f-polonos.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[2]" scope="/tei:TEI/tei:text/tei:front">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="andreis-f-polonos" xml:lang="lat">
+    <title xml:lang="lat">Ad optimates Polonos admonitio</title>
+    <title xml:lang="hrv">Opomena poljskim velikašima</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Ad optimates Polonos admonitio, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Ad optimates Polonos admonitio, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/caland02/andreis-f-polonos/caland02.andreis-f-polonos.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:caland03">
+  <groupname xml:lang="hrv">Andreis, Matej</groupname>
+</textgroup>
+<textgroup projid="croala:caland04">
+  <groupname xml:lang="hrv">Andreis Trogiranin</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Anffredus presbiter</groupname>
+</textgroup>
+<textgroup projid="croala:calanonym">
+  <groupname xml:lang="hrv">Anonymus</groupname>
+</textgroup>
+<textgroup projid="croala:calapp01">
+  <groupname xml:lang="hrv">Appendini, Franjo Marija</groupname>
+</textgroup>
+<textgroup projid="croala:calapp02">
+  <groupname xml:lang="hrv">Appendini, Urban</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Asirelli, Pierfilippo</groupname>
+</textgroup>
+<textgroup projid="croala:calaa-vv">
+  <groupname xml:lang="hrv">Auctores varii</groupname>
+</textgroup>
+<textgroup projid="croala:calaugust01">
+  <groupname xml:lang="hrv">Augustin Zagrepčanin, Juraj</groupname>
+  <work projid="august-g-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistola ad Nicolaum Ostphi</title>
+    <title xml:lang="hrv">Pismo Nikoli Ostffyju</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistola ad Nicolaum Ostphi, versio electronica, (Zagreb 2006 TEI XML)</label>
+      <description xml:lang="lat">Epistola ad Nicolaum Ostphi, versio electronica. Zagreb, Neolatina Croatica, siječnja 2006.</description>
+      <online docname="/db/repository/croala/calaugust01/august-g-epist/calaugust01.august-g-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Azzo Phorestus</groupname>
+</textgroup>
+<textgroup projid="croala:calbabulak01">
+  <groupname xml:lang="hrv">Babulak, Oton</groupname>
+</textgroup>
+<textgroup projid="croala:calbanic01">
+  <groupname xml:lang="hrv">Baničević, Jakov</groupname>
+  <work projid="banic-j-epist-1511-04-29" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Alouisium Brengier (1511-04-29)</title>
+    <title xml:lang="hrv">Pismo Alojziju Brengieru (1511-04-29)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Alouisium Brengier (1511-04-29), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Alouisium Brengier (1511-04-29), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1511-04-29/calbanic01.banic-j-epist-1511-04-29.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-02-16)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-02-16)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-02-16), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-02-16), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-06-04)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-06-04)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-06-04), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-06-04), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[2]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-05-01)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-05-01)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-05-01), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-05-01), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[3]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-04-15)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-04-15)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-04-15), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-04-15), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[4]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-11-26)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-11-26)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-11-26), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-11-26), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[5]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-02-21)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-02-21)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-02-21), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-02-21), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[6]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-03-02)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-03-02)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-03-02), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-03-02), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[7]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-04-27)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-04-27)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-04-27), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-04-27), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[8]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-04-04)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-04-04)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-04-04), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-04-04), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[9]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-05-30)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-05-30)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-05-30), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-05-30), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[10]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1513" xml:lang="lat">
+    <title xml:lang="lat">Epistulae anni 1513 (1513-02-03)</title>
+    <title xml:lang="hrv">Pisma iz 1513. (1513-02-03)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae anni 1513 (1513-02-03), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae anni 1513 (1513-02-03), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1513/calbanic01.banic-j-epist-1513.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[11]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1515-01-17" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Margaretam Archiducissam (1515-01-17)</title>
+    <title xml:lang="hrv">Pismo nadvojvotkinji Margareti (1515-01-17)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Margaretam Archiducissam (1515-01-17), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Margaretam Archiducissam (1515-01-17), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1515-01-17/calbanic01.banic-j-epist-1515-01-17.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-1524-03-02" xml:lang="lat">
+    <title xml:lang="lat">Magnifico et prestantissimo domino Wilibaldo Pirckheymer</title>
+    <title xml:lang="hrv">Velemožnom i najizvrsnijem gospodinu Wilibaldu Pirckheymeru</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Magnifico et prestantissimo domino Wilibaldo Pirckheymer, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Magnifico et prestantissimo domino Wilibaldo Pirckheymer, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-1524-03-02/calbanic01.banic-j-epist-1524-03-02.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-dantisc-1516-01-06" xml:lang="lat">
+    <title xml:lang="lat">Spectabili et egregio Domino Ioanni de Curijs Dantisco</title>
+    <title xml:lang="hrv">Uzoritom i časnom gospodinu Janu Dantisku</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Spectabili et egregio Domino Ioanni de Curijs Dantisco, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Spectabili et egregio Domino Ioanni de Curijs Dantisco, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-dantisc-1516-01-06/calbanic01.banic-j-epist-dantisc-1516-01-06.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-dantisc-1516-01-10" xml:lang="lat">
+    <title xml:lang="lat">Magnifico domino Ioanni de Curiis Dantisco</title>
+    <title xml:lang="hrv">Velemožnom gospodinu Janu Dantisku</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Magnifico domino Ioanni de Curiis Dantisco, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Magnifico domino Ioanni de Curiis Dantisco, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, kolovoza 2012.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-dantisc-1516-01-10/calbanic01.banic-j-epist-dantisc-1516-01-10.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist-hel" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Stephanum Ponchierium</title>
+    <title xml:lang="hrv">Pismo E. Ponchier-u</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Stephanum Ponchierium, versio electronica, (Zagreb 2009 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Stephanum Ponchierium, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2009.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist-hel/calbanic01.banic-j-epist-hel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="banic-j-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Erasmum Roterodamum</title>
+    <title xml:lang="hrv">Pismo Erazmu Roterdamskom</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Erasmum Roterodamum, versio electronica, (Zagreb 2009 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Erasmum Roterodamum, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2009.</description>
+      <online docname="/db/repository/croala/calbanic01/banic-j-epist/calbanic01.banic-j-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbaric01">
+  <groupname xml:lang="hrv">Baričević, Adam Alojzije</groupname>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1793-10-14)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1793-10-14)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1793-10-14), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1793-10-14), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1793-10-28)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1793-10-28)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1793-10-28), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1793-10-28), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[2]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1793-12-24)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1793-12-24)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1793-12-24), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1793-12-24), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[3]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1794-01-03)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1794-01-03)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1794-01-03), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1794-01-03), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[4]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1794-04-13)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1794-04-13)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1794-04-13), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1794-04-13), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[5]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1795-10-15)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1795-10-15)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1795-10-15), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1795-10-15), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[6]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1795-12-12)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1795-12-12)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1795-12-12), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1795-12-12), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[7]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1795-12-27)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1795-12-27)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1795-12-27), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1795-12-27), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[8]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1796-01-27)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1796-01-27)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1796-01-27), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1796-01-27), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[9]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1796-12-30)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1796-12-30)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1796-12-30), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1796-12-30), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[10]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1797-01-07)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1797-01-07)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1797-01-07), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1797-01-07), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[11]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1797-01-30)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1797-01-30)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1797-01-30), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1797-01-30), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[12]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1797-02-16)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1797-02-16)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1797-02-16), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1797-02-16), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[13]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1797)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1797)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1797), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1797), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[14]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1798-06-08)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1798-06-08)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1798-06-08), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1798-06-08), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[15]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist-penzel" xml:lang="lat">
+    <title xml:lang="lat">Epistulae XVI invicem scriptae (1799-04-15)</title>
+    <title xml:lang="hrv">16 naizmjeničnih pisama (1799-04-15)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae XVI invicem scriptae (1799-04-15), versio electronica, (Zagreb 2010 TEI XML)</label>
+      <description xml:lang="lat">Epistulae XVI invicem scriptae (1799-04-15), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2010.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist-penzel/calbaric01.baricev-aa-epist-penzel.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[16]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae (1780-11-01)</title>
+    <title xml:lang="hrv">Pisma (1780-11-01)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae (1780-11-01), versio electronica, (Zagreb 2004 TEI XML)</label>
+      <description xml:lang="lat">Epistolae (1780-11-01), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2004.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist/calbaric01.baricev-aa-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:text[1]" scope="/tei:TEI/tei:text/tei:group">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae (1780-12-01)</title>
+    <title xml:lang="hrv">Pisma (1780-12-01)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae (1780-12-01), versio electronica, (Zagreb 2004 TEI XML)</label>
+      <description xml:lang="lat">Epistolae (1780-12-01), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2004.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist/calbaric01.baricev-aa-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:text[2]" scope="/tei:TEI/tei:text/tei:group">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae (1782-06-19)</title>
+    <title xml:lang="hrv">Pisma (1782-06-19)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae (1782-06-19), versio electronica, (Zagreb 2004 TEI XML)</label>
+      <description xml:lang="lat">Epistolae (1782-06-19), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2004.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist/calbaric01.baricev-aa-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:text[3]" scope="/tei:TEI/tei:text/tei:group">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae (1782-06-24)</title>
+    <title xml:lang="hrv">Pisma (1782-06-24)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae (1782-06-24), versio electronica, (Zagreb 2004 TEI XML)</label>
+      <description xml:lang="lat">Epistolae (1782-06-24), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2004.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist/calbaric01.baricev-aa-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:text[4]" scope="/tei:TEI/tei:text/tei:group">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae (1784-05-23)</title>
+    <title xml:lang="hrv">Pisma (1784-05-23)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae (1784-05-23), versio electronica, (Zagreb 2004 TEI XML)</label>
+      <description xml:lang="lat">Epistolae (1784-05-23), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2004.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist/calbaric01.baricev-aa-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:text[6]" scope="/tei:TEI/tei:text/tei:group">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="baricev-aa-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistolae (1784-07-07)</title>
+    <title xml:lang="hrv">Pisma (1784-07-07)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae (1784-07-07), versio electronica, (Zagreb 2004 TEI XML)</label>
+      <description xml:lang="lat">Epistolae (1784-07-07), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2004.</description>
+      <online docname="/db/repository/croala/calbaric01/baricev-aa-epist/calbaric01.baricev-aa-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:text[8]" scope="/tei:TEI/tei:text/tei:group">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbaric02">
+  <groupname xml:lang="hrv">Barić, Adam Adalbert</groupname>
+</textgroup>
+<textgroup projid="croala:calbelost01">
+  <groupname xml:lang="hrv">Belostenec, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calbenes01">
+  <groupname xml:lang="hrv">Beneša, Damjan</groupname>
+  <work projid="benesa-d-epistolae-dedic" xml:lang="lat">
+    <title xml:lang="lat">Epistolae dedicatoriae ex opere de secundo bello Punico</title>
+    <title xml:lang="hrv">Posvetna pisma iz djela o drugom punskom ratu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae dedicatoriae ex opere de secundo bello Punico, versio electronica, (Zagreb 2014 TEI XML)</label>
+      <description xml:lang="lat">Epistolae dedicatoriae ex opere de secundo bello Punico, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2014.</description>
+      <online docname="/db/repository/croala/calbenes01/benesa-d-epistolae-dedic/calbenes01.benesa-d-epistolae-dedic.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="benesa-d-epistolae-dedic" xml:lang="lat">
+    <title xml:lang="lat">Epistolae dedicatoriae ex opere de secundo bello Punico</title>
+    <title xml:lang="hrv">Posvetna pisma iz djela o drugom punskom ratu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistolae dedicatoriae ex opere de secundo bello Punico, versio electronica, (Zagreb 2014 TEI XML)</label>
+      <description xml:lang="lat">Epistolae dedicatoriae ex opere de secundo bello Punico, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2014.</description>
+      <online docname="/db/repository/croala/calbenes01/benesa-d-epistolae-dedic/calbenes01.benesa-d-epistolae-dedic.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[2]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="benesa-d-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae ad principes</title>
+    <title xml:lang="hrv">Pisma vladarima</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae ad principes, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae ad principes, versio electronica. Zagreb, Profil hrvatskog latinizma, prosinca 2012.</description>
+      <online docname="/db/repository/croala/calbenes01/benesa-d-epistulae/calbenes01.benesa-d-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="benesa-d-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae ad principes</title>
+    <title xml:lang="hrv">Pisma vladarima</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae ad principes, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae ad principes, versio electronica. Zagreb, Profil hrvatskog latinizma, prosinca 2012.</description>
+      <online docname="/db/repository/croala/calbenes01/benesa-d-epistulae/calbenes01.benesa-d-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[2]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="benesa-d-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae ad principes</title>
+    <title xml:lang="hrv">Pisma vladarima</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae ad principes, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistulae ad principes, versio electronica. Zagreb, Profil hrvatskog latinizma, prosinca 2012.</description>
+      <online docname="/db/repository/croala/calbenes01/benesa-d-epistulae/calbenes01.benesa-d-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[3]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+  <textgroup projid="croala:calbenesa03">
+  <groupname xml:lang="hrv">Beneša, Petar</groupname>
+  <work projid="benesa-p-epist-1570" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Ioannem II. Zapolyam</title>
+    <title xml:lang="hrv">Pismo Ivanu II. Zapolji</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Ioannem II. Zapolyam, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Ioannem II. Zapolyam, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, prosinca 2012.</description>
+      <online docname="/db/repository/croala/calbenesa03/benesa-p-epist-1570/calbenesa03.benesa-p-epist-1570.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calberisl01">
+  <groupname xml:lang="hrv">Berislavić, Petar</groupname>
+  <work projid="berislavic-p-epist-1518-04-10" xml:lang="lat">
+    <title xml:lang="lat">Petrus Berislavus episcopus Vespriminensis Leoni papae X</title>
+    <title xml:lang="hrv">Petar Berislavić, vesprimski biskup, papi Leonu X.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Petrus Berislavus episcopus Vespriminensis Leoni papae X, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Petrus Berislavus episcopus Vespriminensis Leoni papae X, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calberisl01/berislavic-p-epist-1518-04-10/calberisl01.berislavic-p-epist-1518-04-10.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="berislavic-p-epist-1519-09-05" xml:lang="lat">
+    <title xml:lang="lat">Petrus Berislavus episcopus Vespriminensis Leoni papae X</title>
+    <title xml:lang="hrv">Petar Berislavić, vesprimski biskup, papi Leonu X.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Petrus Berislavus episcopus Vespriminensis Leoni papae X, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Petrus Berislavus episcopus Vespriminensis Leoni papae X, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calberisl01/berislavic-p-epist-1519-09-05/calberisl01.berislavic-p-epist-1519-09-05.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbilicic01">
+  <groupname xml:lang="hrv">Biličić, Stjepan</groupname>
+</textgroup>
+<textgroup projid="croala:calbol01">
+  <groupname xml:lang="hrv">Bolica, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calbosk01">
+  <groupname xml:lang="hrv">Bošković, Baro</groupname>
+</textgroup>
+<textgroup projid="croala:calbosk02">
+  <groupname xml:lang="hrv">Bošković, Ruđer</groupname>
+  <work projid="boskovic-r-dsld" xml:lang="lat">
+    <title xml:lang="lat">De solis ac lunae defectibus (Epistula dedicatoria)</title>
+    <title xml:lang="hrv">Pomrčine sunca i mjeseca (Posvetno pismo)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">De solis ac lunae defectibus (Epistula dedicatoria), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">De solis ac lunae defectibus (Epistula dedicatoria), versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/calbosk02/boskovic-r-dsld/calbosk02.boskovic-r-dsld.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:front">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbozic01">
+  <groupname xml:lang="hrv">Božićević Natalis, Frano</groupname>
+</textgroup>
+<textgroup projid="croala:calbrez01">
+  <groupname xml:lang="hrv">Brezovački, Tito</groupname>
+</textgroup>
+<textgroup projid="croala:calbrlic01">
+  <groupname xml:lang="hrv">Brlić, Ignjat Alojzije</groupname>
+  <work projid="brlic-ia-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Andriam Torquatum filium</title>
+    <title xml:lang="hrv">Pismo sinu Andriji Torkvatu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Andriam Torquatum filium, versio electronica, (Zagreb 2008 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Andriam Torquatum filium, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2008.</description>
+      <online docname="/db/repository/croala/calbrlic01/brlic-ia-epist/calbrlic01.brlic-ia-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbrod01">
+  <groupname xml:lang="hrv">Brodarić, Stjepan</groupname>
+  <work projid="brodaric-s-epist-1512-09-14" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Aldum Manutium</title>
+    <title xml:lang="hrv">Pismo Aldu Manuciju</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Aldum Manutium, versio electronica, (Zagreb 2009 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Aldum Manutium, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2009.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1512-09-14/calbrod01.brodaric-s-epist-1512-09-14.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1525-09-13" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kraljev tajnik, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1525-09-13/calbrod01.brodaric-s-epist-1525-09-13.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1525-09-30" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kraljev tajnik, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1525-09-30/calbrod01.brodaric-s-epist-1525-09-30.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1525-11-30" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kraljev tajnik, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1525-11-30/calbrod01.brodaric-s-epist-1525-11-30.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1526-02-22" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kraljev tajnik, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus secretarius regius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1526-02-22/calbrod01.brodaric-s-epist-1526-02-22.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1526-03-12" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus electus episcopus Sirmiensis, cancellarius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, izabrani biskup srijemski i kancelar, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus electus episcopus Sirmiensis, cancellarius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus electus episcopus Sirmiensis, cancellarius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1526-03-12/calbrod01.brodaric-s-epist-1526-03-12.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1526-03-17" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus electus episcopus Sirmiensis, cancellarius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, izabrani biskup srijemski i kancelar, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus electus episcopus Sirmiensis, cancellarius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus electus episcopus Sirmiensis, cancellarius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1526-03-17/calbrod01.brodaric-s-epist-1526-03-17.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1526-03-26" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kancelar, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1526-03-26/calbrod01.brodaric-s-epist-1526-03-26.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1526-07-27" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kancelar, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1526-07-27/calbrod01.brodaric-s-epist-1526-07-27.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1526-09-10" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kancelar, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1526-09-10/calbrod01.brodaric-s-epist-1526-09-10.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1526-10-04" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, kancelar, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus cancellarius Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1526-10-04/calbrod01.brodaric-s-epist-1526-10-04.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1531-01-25" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Francescum di Nobili dictum Cheream</title>
+    <title xml:lang="hrv">Pismo Francescu di Nobili</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Francescum di Nobili dictum Cheream, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Francescum di Nobili dictum Cheream, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1531-01-25/calbrod01.brodaric-s-epist-1531-01-25.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1533-03-08" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus Episcopus Sirmiensis Nicolao Olao</title>
+    <title xml:lang="hrv">Stjepan Brodarić, srijemski biskup, Nikoli Olahu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus Episcopus Sirmiensis Nicolao Olao, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus Episcopus Sirmiensis Nicolao Olao, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1533-03-08/calbrod01.brodaric-s-epist-1533-03-08.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1533-05-08" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, srijemski biskup, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1533-05-08/calbrod01.brodaric-s-epist-1533-05-08.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1533-08-01" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, srijemski biskup, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1533-08-01/calbrod01.brodaric-s-epist-1533-08-01.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1533-12-10" xml:lang="lat">
+    <title xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII</title>
+    <title xml:lang="hrv">Stjepan Brodarić, srijemski biskup, papi Klementu VII.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Stephanus Brodericus episcopus Sirmiensis Clementi papae VII, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1533-12-10/calbrod01.brodaric-s-epist-1533-12-10.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1536-02-26" xml:lang="lat">
+    <title xml:lang="lat">S. Brodericus Episcopus Quinqueecclesiensis Nicolao Olao suo</title>
+    <title xml:lang="hrv">S. Brodarić, pečujski biskup, svom Nikoli Olahu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">S. Brodericus Episcopus Quinqueecclesiensis Nicolao Olao suo, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">S. Brodericus Episcopus Quinqueecclesiensis Nicolao Olao suo, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1536-02-26/calbrod01.brodaric-s-epist-1536-02-26.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epist-1536-04-22" xml:lang="lat">
+    <title xml:lang="lat">Brodericus Nicolao Olao suo</title>
+    <title xml:lang="hrv">Brodarić svom Nikoli Olahu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Brodericus Nicolao Olao suo, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Brodericus Nicolao Olao suo, versio electronica. Zagreb, Profil hrvatskog latinizma, siječnja 2012.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epist-1536-04-22/calbrod01.brodaric-s-epist-1536-04-22.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[1]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[2]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[3]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[4]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[5]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[6]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[7]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[8]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[9]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[10]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[11]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[12]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[13]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[14]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[15]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[16]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[17]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[18]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[19]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[20]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[21]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[22]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[23]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[24]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[25]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[26]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[27]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[28]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[29]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[30]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[31]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[32]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[33]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[34]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[35]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[36]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[37]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[38]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[39]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[40]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[41]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[42]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[43]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[44]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[45]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[46]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[47]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[48]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[49]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="brodaric-s-epistulae" xml:lang="lat">
+    <title xml:lang="lat">Epistulae</title>
+    <title xml:lang="hrv">Pisma</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistulae, versio electronica, (Zagreb 2013 TEI XML)</label>
+      <description xml:lang="lat">Epistulae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, siječnja 2013.</description>
+      <online docname="/db/repository/croala/calbrod01/brodaric-s-epistulae/calbrod01.brodaric-s-epistulae.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[50]" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbuci01">
+  <groupname xml:lang="hrv">Bučinjelić, Miho</groupname>
+  <work projid="bucinjelic-m-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Gerardum Planiam</title>
+    <title xml:lang="hrv">Pismo Gerardu Plania</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Gerardum Planiam, versio electronica, (Zagreb 2008 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Gerardum Planiam, versio electronica. Zagreb, Croatiae auctores Latini, Facultas philosophiae Universitatis Zagrabiensis, mense Augusto 2008</description>
+      <online docname="/db/repository/croala/calbuci01/bucinjelic-m-epist/calbuci01.bucinjelic-m-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbulic01">
+  <groupname xml:lang="hrv">Bulić, don Frane</groupname>
+  <work projid="bulic-f-epist" xml:lang="lat">
+    <title xml:lang="lat">Epistula salutatoria</title>
+    <title xml:lang="hrv">Pozdravno pismo</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula salutatoria, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula salutatoria, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, Srpnja 2012</description>
+      <online docname="/db/repository/croala/calbulic01/bulic-f-epist/calbulic01.bulic-f-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calbunic02">
+  <groupname xml:lang="hrv">Bunić, Jakov</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Caluus, Hieronymus</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Camillo, Giulio</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Cassandra Fedele</groupname>
+</textgroup>
+<textgroup projid="croala:calcibel01">
+  <groupname xml:lang="hrv">Cibel, Valentin</groupname>
+</textgroup>
+<textgroup projid="croala:calcipik02">
+  <groupname xml:lang="hrv">Cipiko, Alviz</groupname>
+</textgroup>
+<textgroup projid="croala:calcipik01">
+  <groupname xml:lang="hrv">Cipiko, Koriolan</groupname>
+</textgroup>
+<textgroup projid="croala:calcival01">
+  <groupname xml:lang="hrv">Civalelli, Donat</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Colonna Galatino, Pietro</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Cortonus de Vtino Minorita, Bernardinus</groupname>
+</textgroup>
+<textgroup projid="croala:calcrije02">
+  <groupname xml:lang="hrv">Crijević, Ilija</groupname>
+  <work projid="croala:crijev-i-epist-1504" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Marinum Bonum (1504/1512)</title>
+    <title xml:lang="hrv">Pismo Marinu Buniću (1504/1512)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Marinum Bonum (1504/1512), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Marinum Bonum (1504/1512), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2012.</description>
+      <online docname="/db/repository/croala/calcrije02/crijev-i-epist-1504/calcrije02.crijev-i-epist-1504.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            <citation label="Sectio" xpath="/tei:div[@n='?']" scope="/tei:TEI/tei:text/tei:body/tei:div[@xml:id='?']">
+            </citation>
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="crijev-i-epist-1506" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Marinum Bonum (1506)</title>
+    <title xml:lang="hrv">Pismo Marinu Buniću (1506)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Marinum Bonum (1506), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Marinum Bonum (1506), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2012.</description>
+      <online docname="/db/repository/croala/calcrije02/crijev-i-epist-1506/calcrije02.crijev-i-epist-1506.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="crijev-i-epist-1510" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Marinum Bonum (1510)</title>
+    <title xml:lang="hrv">Pismo Marinu Buniću (1510)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Marinum Bonum (1510), versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Marinum Bonum (1510), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2012.</description>
+      <online docname="/db/repository/croala/calcrije02/crijev-i-epist-1510/calcrije02.crijev-i-epist-1510.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Crijević, Serafin Marija</groupname>
+</textgroup>
+<textgroup projid="croala:calcrije01">
+  <groupname xml:lang="hrv">Crijević Tuberon, Ludovik</groupname>
+</textgroup>
+<textgroup projid="croala:calcrni01">
+  <groupname xml:lang="hrv">Crni, Petar</groupname>
+</textgroup>
+<textgroup projid="croala:calcobar01">
+  <groupname xml:lang="hrv">Čobarnić, Josip</groupname>
+</textgroup>
+  <textgroup projid="croala:calcrnkovic01">
+  <groupname xml:lang="hrv">Črnković, Petar Stanislav</groupname>
+    <work projid="crnkovic-p-epist" xml:lang="lat">
+      <title xml:lang="lat">Epistula ad Paulum Ritter</title>
+    <title xml:lang="hrv">Pismo Pavlu Ritteru</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Paulum Ritter, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Paulum Ritter, versio electronica. Croatiae auctores Latini, indagatio in Facultate philosophica Universitatis Zagrabiensis, Croatia, mense Augusto 2012.</description>
+      <online docname="/db/repository/croala/calcrnkovic01/crnkovic-p-epist/calcrnkovic01.crnkovic-p-epist.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Dante Alighieri</groupname>
+</textgroup>
+<textgroup projid="croala:calviaf88992353">
+  <groupname xml:lang="hrv">Dimitrović, Nikola Jera</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Dionysius Halicarnassensis</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Divnić, Ivan Krstitelj</groupname>
+</textgroup>
+<textgroup projid="croala:caldivni01">
+  <groupname xml:lang="hrv">Divnić, Juraj</groupname>
+  <work projid="difnic-g-epist-alex-vi" xml:lang="lat">
+    <title xml:lang="lat">Epistula ad Alexandrum VI Georgii Difnici Dalmatae episcopi Nonensis</title>
+    <title xml:lang="hrv">Pismo Jurja Divnića Dalmate, ninskog biskupa Aleksandru VI.</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Epistula ad Alexandrum VI Georgii Difnici Dalmatae episcopi Nonensis, versio electronica, (Zagreb 2005 TEI XML)</label>
+      <description xml:lang="lat">Epistula ad Alexandrum VI Georgii Difnici Dalmatae episcopi Nonensis, versio electronica. Zagreb, Neolatina Croatica, srpnja 2005.</description>
+      <online docname="/db/repository/croala/caldivni01/difnic-g-epist-alex-vi/caldivni01.difnic-g-epist-alex-vi.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:caldragis01">
+  <groupname xml:lang="hrv">Dragišić, Juraj</groupname>
+</textgroup>
+<textgroup projid="croala:caldraskovic02">
+  <groupname xml:lang="hrv">Drašković, Janko</groupname>
+</textgroup>
+<textgroup projid="croala:caldraskov01">
+  <groupname xml:lang="hrv">Drašković, Juraj</groupname>
+</textgroup>
+<textgroup projid="croala:caldudes01">
+  <groupname xml:lang="hrv">Dudesić, Matej</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Dudić, Andrija</groupname>
+</textgroup>
+<textgroup projid="croala:caldjurdjev01">
+  <groupname xml:lang="hrv">Đurđević, Bartul</groupname>
+</textgroup>
+<textgroup projid="croala:caldjurdjev02">
+  <groupname xml:lang="hrv">Đurđević, Ignjat</groupname>
+  <work projid="djurdjev-i-melit" xml:lang="lat">
+    <title xml:lang="lat">Januario Salines Suo S. P. D.</title>
+    <title xml:lang="hrv">Mnogo pozdrava mom Januariju Salinesu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Januario Salines Suo S. P. D., versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Januario Salines Suo S. P. D., versio electronica. Zagreb, Profil hrvatskog latinizma, srpnja 2012.</description>
+      <online docname="/db/repository/croala/caldjurdjev02/djurdjev-i-melit/caldjurdjev02.djurdjev-i-melit.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calferic01">
+  <groupname xml:lang="hrv">Ferić, Đuro</groupname>
+</textgroup>
+<textgroup projid="croala:calferic01">
+  <groupname xml:lang="hrv">Ferić Gvozdenica, Đuro</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Fortis, Alberto</groupname>
+</textgroup>
+<textgroup projid="croala:calfrankop04">
+  <groupname xml:lang="hrv">Frankapan, Bernardin</groupname>
+</textgroup>
+<textgroup projid="croala:calfrankop01">
+  <groupname xml:lang="hrv">Frankapan, Franjo</groupname>
+</textgroup>
+<textgroup projid="croala:calfrankop02">
+  <groupname xml:lang="hrv">Frankapan, Krsto</groupname>
+</textgroup>
+<textgroup projid="croala:caldragis01">
+  <groupname xml:lang="hrv">Frano Galatin</groupname>
+</textgroup>
+<textgroup projid="croala:calgaj01">
+  <groupname xml:lang="hrv">Gaj, Ljudevit</groupname>
+</textgroup>
+<textgroup projid="croala:calgalac01">
+  <groupname xml:lang="hrv">Galac, Dragutin</groupname>
+</textgroup>
+<textgroup projid="croala:calgalopa01">
+  <groupname xml:lang="hrv">Galopa, Antonije</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Gaudentius</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Georgius Priolus</groupname>
+</textgroup>
+<textgroup projid="croala:calgetaldi02">
+  <groupname xml:lang="hrv">Getaldić, Marin</groupname>
+</textgroup>
+<textgroup projid="croala:calgetaldi02">
+  <groupname xml:lang="hrv">Getaldić, Vlaho</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Giliberto Grineo</groupname>
+</textgroup>
+<textgroup projid="croala:calglavin01">
+  <groupname xml:lang="hrv">Glavinić, Sebastijan</groupname>
+</textgroup>
+<textgroup projid="croala:calgolub01">
+  <groupname xml:lang="hrv">Golub, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calgradi01">
+  <groupname xml:lang="hrv">Gradić, Stjepan</groupname>
+</textgroup>
+<textgroup projid="croala:calgrangya01">
+  <groupname xml:lang="hrv">Grangya, Petar</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Grauisius, Iacobus</groupname>
+</textgroup>
+<textgroup projid="croala:calgrbic01">
+  <groupname xml:lang="hrv">Grbić Ilirik, Matija</groupname>
+</textgroup>
+<textgroup projid="croala:calgrisogono01">
+  <groupname xml:lang="hrv">Grisogono, Federik</groupname>
+</textgroup>
+<textgroup projid="croala:calgucet02">
+  <groupname xml:lang="hrv">Gučetić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calgundul01">
+  <groupname xml:lang="hrv">Gundulić, Fran Lucijan</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Gundulić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calhektor01">
+  <groupname xml:lang="hrv">Hektorović, Petar</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Hesiodus</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">HieronymusAnd.</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Hilarion di Vicenza</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Homerus</groupname>
+</textgroup>
+<textgroup projid="croala:calhrank01">
+  <groupname xml:lang="hrv">Hranković, Dujam</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Ioannes Staphileus</groupname>
+</textgroup>
+<textgroup projid="croala:caljanpan01">
+  <groupname xml:lang="hrv">Jan Panonije</groupname>
+</textgroup>
+<textgroup projid="croala:caljelacic01">
+  <groupname xml:lang="hrv">Jelačić, Ljudevit</groupname>
+</textgroup>
+<textgroup projid="croala:caljuric01">
+  <groupname xml:lang="hrv">Jurić, Šime</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Jurjević, Juraj</groupname>
+</textgroup>
+<textgroup projid="croala:calkabalin01">
+  <groupname xml:lang="hrv">Kabalin, Grgur</groupname>
+</textgroup>
+<textgroup projid="croala:calkalic01">
+  <groupname xml:lang="hrv">Kalić, Arkanđeo</groupname>
+</textgroup>
+<textgroup projid="croala:calpucic01">
+  <groupname xml:lang="hrv">Karlo Pucić</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Kašić, Bartol</groupname>
+</textgroup>
+<textgroup projid="croala:calkatanc01">
+  <groupname xml:lang="hrv">Katančić, Matija Petar</groupname>
+</textgroup>
+<textgroup projid="croala:calkiton01">
+  <groupname xml:lang="hrv">Kitonić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calkalic01">
+  <groupname xml:lang="hrv">Kordić, Marko</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Kotruljević, Benedikt</groupname>
+</textgroup>
+<textgroup projid="croala:calkozic01">
+  <groupname xml:lang="hrv">Kožičić Benja, Šimun</groupname>
+  <work projid="begnius-s-elogium" xml:lang="lat">
+    <title xml:lang="lat">Elogium... in Etymon reuerendissimi patris magistri Dominici Buchiae</title>
+    <title xml:lang="hrv">Elogij... Etymonu velečasnog oca magistra Dominika Buće</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Elogium... in Etymon reuerendissimi patris magistri Dominici Buchiae, versio electronica, (Zagreb 2012 TEI XML)</label>
+      <description xml:lang="lat">Elogium... in Etymon reuerendissimi patris magistri Dominici Buchiae, versio electronica. Zagreb, Digitalizacija hrvatskih latinista, veljače 2012.</description>
+      <online docname="/db/repository/croala/calkozic01/begnius-s-elogium/calkozic01.begnius-s-elogium.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calkravar01">
+  <groupname xml:lang="hrv">Kravar, Miroslav</groupname>
+</textgroup>
+<textgroup projid="croala:calkrcel01">
+  <groupname xml:lang="hrv">Krčelić, Baltazar Adam</groupname>
+</textgroup>
+<textgroup projid="croala:calkrizan01">
+  <groupname xml:lang="hrv">Križanić, Juraj</groupname>
+</textgroup>
+<textgroup projid="croala:calkrsav01">
+  <groupname xml:lang="hrv">Kršava, Jeronim</groupname>
+</textgroup>
+<textgroup projid="croala:calkrsav02">
+  <groupname xml:lang="hrv">Kršava, Petar</groupname>
+</textgroup>
+<textgroup projid="croala:calkruz01">
+  <groupname xml:lang="hrv">Kružić, Petar</groupname>
+</textgroup>
+<textgroup projid="croala:calkunic02">
+  <groupname xml:lang="hrv">Kunić, Rajmund</groupname>
+</textgroup>
+<textgroup projid="croala:callazaea01">
+  <groupname xml:lang="hrv">Lazea, Filipa</groupname>
+</textgroup>
+<textgroup projid="croala:callevak01">
+  <groupname xml:lang="hrv">Levaković, Rafael</groupname>
+</textgroup>
+<textgroup projid="croala:callipav01">
+  <groupname xml:lang="hrv">Lipavić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:callucic02">
+  <groupname xml:lang="hrv">Lučić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calmadij01">
+  <groupname xml:lang="hrv">Madijev de Barbazanis, Miha</groupname>
+</textgroup>
+<textgroup projid="croala:calmakarelic.jerolim.01">
+  <groupname xml:lang="hrv">Makarelić, Jerolim</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Malinius Sandecensis, Gasparus</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Martinčić, Franjo</groupname>
+</textgroup>
+<textgroup projid="croala:calmartin02">
+  <groupname xml:lang="hrv">Martinčić, Jerolim</groupname>
+</textgroup>
+<textgroup projid="croala:calmarul01">
+  <groupname xml:lang="hrv">Marulić, Marko</groupname>
+  <work projid="croala:marul-mar-epist-1477" xml:lang="lat">
+    <title xml:lang="lat">Ad Georgium Sisgoreum epistula (1477)</title>
+    <title xml:lang="hrv">Pismo Jurju Šižgoriću (1477)</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Ad Georgium Sisgoreum epistula (1477), versio electronica (Zagreb 2009 TEI XML)</label>
+      <description xml:lang="lat">Ad Georgium Sisgoreum epistula (1477), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2009.</description>
+      <online docname="/db/repository/croala/calmarul01/marul-mar-epist-1477/calmarul01.marul-mar-epist-1477.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>    
+  </work>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Marullo, Michelle</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Marullus Macedo, Stanislaus</groupname>
+</textgroup>
+<textgroup projid="croala:calmatij01">
+  <groupname xml:lang="hrv">Matijašević Karamaneo, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Matthaeus Desseus Ragusinus</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Mazarelli, Valerio</groupname>
+</textgroup>
+<textgroup projid="croala:calmazuranicd1e1166">
+  <groupname xml:lang="hrv">Mažuranić, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:calmazuranic.viaf17261922">
+  <groupname xml:lang="hrv">Mažuranić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Michael Racetinus</groupname>
+</textgroup>
+<textgroup projid="croala:calmihanov01">
+  <groupname xml:lang="hrv">Mihanović, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:calmihet01">
+  <groupname xml:lang="hrv">Mihetić, Ambroz</groupname>
+</textgroup>
+<textgroup projid="croala:calmikac01">
+  <groupname xml:lang="hrv">Mikac, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:calmilasin01">
+  <groupname xml:lang="hrv">Milašinović, Franjo</groupname>
+</textgroup>
+<textgroup projid="croala:calmilecij01">
+  <groupname xml:lang="hrv">Milecije</groupname>
+</textgroup>
+<textgroup projid="croala:calmladin01">
+  <groupname xml:lang="hrv">Mladinić, Sabo</groupname>
+</textgroup>
+<textgroup projid="croala:calmladin01">
+  <groupname xml:lang="hrv">Mladinić, Sebastijan</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Molza, Francesco Maria</groupname>
+</textgroup>
+<textgroup projid="croala:calmuzic01">
+  <groupname xml:lang="hrv">Mužić, Frano</groupname>
+</textgroup>
+<textgroup projid="croala:calnaljesk01">
+  <groupname xml:lang="hrv">Nalješković, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:calnardin01">
+  <groupname xml:lang="hrv">Nardin, Petar</groupname>
+</textgroup>
+<textgroup projid="croala:calniger02">
+  <groupname xml:lang="hrv">Niger, Toma</groupname>
+</textgroup>
+<textgroup projid="croala:calnikolamodr01">
+  <groupname xml:lang="hrv">Nikola Modruški</groupname>
+</textgroup>
+<textgroup projid="croala:calnimira01">
+  <groupname xml:lang="hrv">Nimira Rabljanin, Martin</groupname>
+</textgroup>
+<textgroup projid="croala:calorlovic01">
+  <groupname xml:lang="hrv">Orlović, Grgur</groupname>
+</textgroup>
+<textgroup projid="croala:calpalikuc01">
+  <groupname xml:lang="hrv">Palikuća, Petar</groupname>
+</textgroup>
+<textgroup projid="croala:calpalmot02">
+  <groupname xml:lang="hrv">Palmotić, Džore</groupname>
+</textgroup>
+<textgroup projid="croala:calpalmot01">
+  <groupname xml:lang="hrv">Palmotić, Junije</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Papalić, Jerolim</groupname>
+</textgroup>
+<textgroup projid="croala:calpaskal01">
+  <groupname xml:lang="hrv">Paskalić, Ludovik</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Paskvalić, Donat</groupname>
+</textgroup>
+<textgroup projid="croala:calpaul01">
+  <groupname xml:lang="hrv">Pavlović, Pavao</groupname>
+</textgroup>
+<textgroup projid="croala:calperceval01">
+  <groupname xml:lang="hrv">Perceval Ivanov iz Ferma</groupname>
+</textgroup>
+<textgroup projid="croala:calpetric01">
+  <groupname xml:lang="hrv">Petrić, Frane</groupname>
+</textgroup>
+<textgroup projid="croala:calpetrov01">
+  <groupname xml:lang="hrv">Petrović, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:calpetrov02">
+  <groupname xml:lang="hrv">Petrović, Vice</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Petrus Barocius</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Petrus Galatinus</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Pima, Bernard</groupname>
+</textgroup>
+<textgroup projid="croala:caldidak01">
+  <groupname xml:lang="hrv">Pir, Didak</groupname>
+  <work projid="didacus-p-paul" xml:lang="lat">
+    <title xml:lang="lat">Ad Paulum</title>
+    <title xml:lang="hrv">Paolu</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Ad Paulum, versio electronica, (Zagreb 2007 TEI XML)</label>
+      <description xml:lang="lat">Ad Paulum, versio electronica. Digitalizacija hrvatskih latinista, znanstveni projekt na
+        Filozofskom fakultetu Sveučilišta u Zagrebu, Hrvatska, srpnja 2007.</description>
+      <online docname="/db/repository/croala/caldidak01/didacus-p-paul/caldidak01.didacus-p-paul.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+  <work projid="didacus-p-slatarichio" xml:lang="lat">
+    <title xml:lang="lat">Michaeli Mensio, senatori gravissimo et aerarii IIIviro S. D.</title>
+    <title xml:lang="hrv">Mihailu Menčetiću, uvaženom senatoru i blagajniku</title>
+    <edition projid="croala:croala-lat1">
+      <label xml:lang="lat">Michaeli Mensio, senatori gravissimo et aerarii IIIviro S. D., versio electronica, (Zagreb 2014 TEI XML)</label>
+      <description xml:lang="lat">Michaeli Mensio, senatori gravissimo et aerarii IIIviro S. D., versio electronica. Zagreb, Croatica et Tyrolensia, svibnja 2014.</description>
+      <online docname="/db/repository/croala/caldidak01/didacus-p-slatarichio/caldidak01.didacus-p-slatarichio.croala-lat1.xml">
+        <validate schema="tei_all.xsd"/>
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+          <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+            
+          </citation>
+        </citationMapping>
+      </online>
+    </edition>
+  </work>
+</textgroup>
+<textgroup projid="croala:calpopdukl01">
+  <groupname xml:lang="hrv">Pop Dukljanin</groupname>
+</textgroup>
+<textgroup projid="croala:calposedar01">
+  <groupname xml:lang="hrv">Posedarski, Stjepan</groupname>
+</textgroup>
+<textgroup projid="croala:calpribojev01">
+  <groupname xml:lang="hrv">Pribojević, Vinko</groupname>
+</textgroup>
+<textgroup projid="croala:calpridojev01">
+  <groupname xml:lang="hrv">Pridojević, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calpucic01">
+  <groupname xml:lang="hrv">Pucić, Karlo</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Raffaele Zovenzoni</groupname>
+</textgroup>
+<textgroup projid="croala:calrasti01">
+  <groupname xml:lang="hrv">Rastić, Džono</groupname>
+</textgroup>
+<textgroup projid="croala:calrest02">
+  <groupname xml:lang="hrv">Rastić, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:calrattkay02">
+  <groupname xml:lang="hrv">Rattkay, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Razmilović, Bonaventura</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Ritter Vitezović, Pavao</groupname>
+</textgroup>
+<textgroup projid="croala:calrogac01">
+  <groupname xml:lang="hrv">Rogačić, Benedikt</groupname>
+</textgroup>
+<textgroup projid="croala:calrosan01">
+  <groupname xml:lang="hrv">Rozanović, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:calsabolov01">
+  <groupname xml:lang="hrv">Sabolović, Martin</groupname>
+</textgroup>
+<textgroup projid="croala:calsagudin01">
+  <groupname xml:lang="hrv">Sagudinus, Nicolaus</groupname>
+</textgroup>
+<textgroup projid="croala:calselimb01">
+  <groupname xml:lang="hrv">Selimbrić, Šimun</groupname>
+</textgroup>
+<textgroup projid="croala:calseverit01">
+  <groupname xml:lang="hrv">Severitan, Ivan Polikarp</groupname>
+</textgroup>
+<textgroup projid="croala:calsidic01">
+  <groupname xml:lang="hrv">Sidić, Šimun Juda</groupname>
+</textgroup>
+<textgroup projid="croala:calsivri01">
+  <groupname xml:lang="hrv">Sivrić, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:calslavat01">
+  <groupname xml:lang="hrv">Slavat, Vicko</groupname>
+</textgroup>
+<textgroup projid="croala:calsmerdel01">
+  <groupname xml:lang="hrv">Smerdel, Ton</groupname>
+</textgroup>
+<textgroup projid="croala:calsobot01">
+  <groupname xml:lang="hrv">Sobota, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calsobot02">
+  <groupname xml:lang="hrv">Sobota, Katarina</groupname>
+</textgroup>
+<textgroup projid="croala:calsorko02">
+  <groupname xml:lang="hrv">Sorkočević, Miho</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Statilić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calstatil01">
+  <groupname xml:lang="hrv">Statilić, Marin</groupname>
+</textgroup>
+<textgroup projid="croala:calstay01">
+  <groupname xml:lang="hrv">Stay, Benedikt</groupname>
+</textgroup>
+<textgroup projid="croala:calstep01">
+  <groupname xml:lang="hrv">Stepanić Selnički, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:calposedar01">
+  <groupname xml:lang="hrv">Stephanus Possidarski</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Stjepan, biskup zadarski</groupname>
+</textgroup>
+<textgroup projid="croala:calmedak01">
+  <groupname xml:lang="hrv">Stjepan Medak</groupname>
+</textgroup>
+<textgroup projid="croala:calstulli01">
+  <groupname xml:lang="hrv">Stulli, Luko</groupname>
+</textgroup>
+<textgroup projid="croala:calsuricevictoma01">
+  <groupname xml:lang="hrv">Suričević, Toma</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Szalágyi István</groupname>
+</textgroup>
+<textgroup projid="croala:calsar01">
+  <groupname xml:lang="hrv">Šarar, Erazmo</groupname>
+</textgroup>
+<textgroup projid="croala:calsilobodbolsicd1e2035">
+  <groupname xml:lang="hrv">Šilobod Bolšić, Mihalj</groupname>
+</textgroup>
+<textgroup projid="croala:calsizgo01">
+  <groupname xml:lang="hrv">Šižgorić, Juraj</groupname>
+</textgroup>
+<textgroup projid="croala:calsizgo02">
+  <groupname xml:lang="hrv">Šižgorić, Juraj (stariji)</groupname>
+</textgroup>
+<textgroup projid="croala:calskrl01">
+  <groupname xml:lang="hrv">Škrlec Lomnički, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Štafilić, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calstafilic.stjepan.01">
+  <groupname xml:lang="hrv">Štafilić, Stjepan</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Tideo Acciarini</groupname>
+</textgroup>
+<textgroup projid="croala:caltihic02">
+  <groupname xml:lang="hrv">Tihić, Nikola</groupname>
+</textgroup>
+<textgroup projid="croala:caltolimer01">
+  <groupname xml:lang="hrv">Tolimerić, Ilija</groupname>
+</textgroup>
+<textgroup projid="croala:caltoma01">
+  <groupname xml:lang="hrv">Toma Arhiđakon</groupname>
+</textgroup>
+<textgroup projid="croala:calutjes02">
+  <groupname xml:lang="hrv">Utješenović-Martinuzzi, Juraj</groupname>
+</textgroup>
+<textgroup projid="croala:calvicic01">
+  <groupname xml:lang="hrv">Vičić, Kajetan</groupname>
+</textgroup>
+<textgroup projid="croala:calvitez01">
+  <groupname xml:lang="hrv">Vitez od Sredne, Ivan</groupname>
+</textgroup>
+<textgroup projid="croala:calvlaci01">
+  <groupname xml:lang="hrv">Vlačić Ilirik, Matija</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Volpe, Giovanni Antonio</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Vramec, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:calvranc01">
+  <groupname xml:lang="hrv">Vrančić, Antun</groupname>
+</textgroup>
+<textgroup projid="croala:calvranc02">
+  <groupname xml:lang="hrv">Vrančić, Faust</groupname>
+</textgroup>
+<textgroup projid="croala:calvranc03">
+  <groupname xml:lang="hrv">Vrančić, Mihovil</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Vranius</groupname>
+</textgroup>
+<textgroup projid="croala:calvrhov01">
+  <groupname xml:lang="hrv">Vrhovac, Maksimilijan</groupname>
+</textgroup>
+<textgroup projid="croala:calzama01">
+  <groupname xml:lang="hrv">Zamanja, Bernard</groupname>
+</textgroup>
+<textgroup projid="croala:cal">
+  <groupname xml:lang="hrv">Zamanja, Marija</groupname>
+</textgroup>
+<textgroup projid="croala:calzavor01">
+  <groupname xml:lang="hrv">Zavorović, Dinko</groupname>
+</textgroup>
+<textgroup projid="croala:calziger01">
+  <groupname xml:lang="hrv">Zigerius, Emerik</groupname>
+</textgroup>
   
   <!-- Perseus - remove when finished -->
   <textgroup projid="greekLit:tlg0003">
