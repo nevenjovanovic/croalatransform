@@ -1,0 +1,127 @@
+<html>    
+	<head>
+		<title>404 not found</title>
+		
+		<!-- Inspired by the GitHub 404 page -- 5/15/15 by DW
+			See this blog post for more info.
+			http://liveblog.co/users/davewiner/2015/05/15/404Pages.html
+			Only steal from the best. ;-)
+			 -->
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://fargo.io/code/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://solr.ffzg.hr/basex/static/dist/css/bootstrap.min.css"/><script src="http://fargo.io/code/bootstrap.min.js"></script><link rel="stylesheet" href="http://fargo.io/code/fontAwesome/css/font-awesome.min.css"/><link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css"><link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css"><script src="http://fargo.io/code/node/shared/utils.js"></script><script src="http://fargo.io/code/node/shared/alertdialog.js"></script><script src="http://fargo.io/code/node/shared/confirmdialog.js"></script><script src="http://fargo.io/code/node/shared/askdialog.js"></script><script src="http://fargo.io/code/shared/twitter.js"></script><script src="http://fargo.io/code/strftime.js"></script><script src="http://fargo.io/code/shared/ga.js"></script><script src="http://fargo.io/code/shared/app.js"></script><script src="http://fargo.io/code/shared/menus.js"></script><link href="http://fargo.io/code/shared/menus.css" rel="stylesheet" type="text/css"><link href="http://fargo.io/code/shared/app.css" rel="stylesheet" type="text/css"><script src="http://fargo.io/code/shared/appprefs.js"></script><script src="http://fargo.io/code/shared/beep.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+		<script>
+			var appConsts = {
+				domain: "scoble.org", 
+				version: "0.40"
+				}
+			function everySecond () {
+				}
+			function startup () {
+				console.log ("startup");
+				hitCounter (); 
+				initGoogleAnalytics (); 
+				self.setInterval (function () {everySecond ()}, 1000); 
+				}
+			</script>
+		<style>
+			body {
+				font-family: Ubuntu;
+				font-size: 18px;
+				background-color: whitesmoke;
+				line-height: 140%;
+				}
+			.divBackgroundImage {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 10;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divOverlay {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				z-index: 20;
+				background-color: black;
+				opacity: 0.4;
+				}
+			.divPageBody {
+				position: relative;
+				
+				width: 60%;
+				margin-left: auto;
+				margin-right: auto;
+				
+				z-index: 30;
+				}
+			.divText {
+				font-family: "Oswald";
+				color: white;
+				font-size: 80px;
+				margin-top: 45%;
+				line-height: 140%;
+				text-shadow: 1px 1px black;
+				}
+			.divSubText {
+				font-size: 36px;
+				line-height: 150%;
+				}
+			.divSubText a {
+				color: white;
+				}
+			</style>
+		<style> /* styles for phone */
+			@media only screen 
+			and (min-device-width : 320px) 
+			and (max-device-width : 480px) {
+				.divPageBody {
+					width: 80%;
+					}
+				.divText {
+					font-size: 36px;
+					margin-top: 250px;
+					}
+				.divSubText {
+					font-size: 20px;
+					}
+				}
+			</style>
+		</head>
+	<body>
+		<div class="divBackgroundImage" style="background-image: url(http://solr.ffzg.hr/basex/static/gfx/morlak.jpg);">
+			
+		<div class="divOverlay"></div>
+		<div class="divPageBody">
+			<div class="divText">
+				<center>
+					404 Not Found
+					<div class="divSubText">
+						Ova stranica kod nas ne postoji.<br/>
+						This is not the web page you are looking for.<br/>
+						<small>Filozofski fakultet Sveučilišta u Zagrebu</small>
+						</div>
+					</center>
+				</div>
+			</div>
+		<script>
+			$(document).ready (function () {
+				startup ();
+				});
+			</script>
+		</body>
+	</html>

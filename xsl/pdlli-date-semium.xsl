@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:saxon="http://saxon.sf.net/"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+    <!-- pdlli-date-semium.xsl in profileDesc add @period attr to date element with thirds of centuries -->
+    <!-- Jovanovic, 10/02/15 -->
+    <!-- from / to nije riješeno -->
+        <!-- includes XSLT Template to copy anything, faster -->
+        <!-- source: tei wiki and http://www.xmlplease.com/xsltidentity (nice examples!) -->
+    <xsl:template match="comment()|processing-instruction()|text()">
+        <xsl:copy/>
+    </xsl:template>
+    <xsl:template match="*">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <!-- match year in date, add @period attribute with Semium value -->
+    
+    <!-- declare variables for thirds of century -->
+    <xsl:variable name="firstthird" select="'(0[1-9]|[1-2][0-9]|3[0-3])'"/>
+    <xsl:variable name="secondthird" select="'([4-5][0-9]|3[4-9]|6[0-6])'"/>
+    <!-- declare variables for semium address -->
+    <xsl:variable name="semiumaddr" select="'http://semium.org/time/'"/>
+    <xsl:variable name="semiumfrst" select="'xx_1_third'"/>
+    <xsl:variable name="semiumscnd" select="'xx_2_third'"/>
+    <xsl:variable name="semiumthrd" select="'xx_3_third'"/>
+    
+    <!-- 11th century: -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('10',$firstthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('10',$semiumfrst)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('10',$secondthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('10',$semiumscnd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '^10[7-9]|^106[7-9]|^1100')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('10',$semiumthrd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!-- 12th century: -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('11',$firstthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('11',$semiumfrst)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('11',$secondthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('11',$semiumscnd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '^11[7-9]|^116[7-9]|^1200')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('11',$semiumthrd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!-- 13th century: -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('12',$firstthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('12',$semiumfrst)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('12',$secondthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('12',$semiumscnd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '^12[7-9]|^126[7-9]|^1300')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('12',$semiumthrd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!-- 14th century: -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('13',$firstthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('13',$semiumfrst)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('13',$secondthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('13',$semiumscnd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '^13[7-9]|^136[7-9]|^1400')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('13',$semiumthrd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    
+   <!-- 15th century: -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('14',$firstthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('14',$semiumfrst)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('14',$secondthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('14',$semiumscnd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '^14[7-9]|^146[7-9]|^1500')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('14',$semiumthrd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!-- 16th century: -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('15',$firstthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('15',$semiumfrst)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('15',$secondthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('15',$semiumscnd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '15[7-9]|156[7-9]|1600')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('15',$semiumthrd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <!-- 17th c. -->
+    <!-- 17th century -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('16',$firstthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('16',$semiumfrst)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., concat('16',$secondthird))]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('16',$semiumscnd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '^16[7-9]|^166[7-9]|^1700')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period"><xsl:value-of select="concat('16',$semiumthrd)"/></xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!-- bez godina -->
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '12xx')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period">12xx</xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '13xx')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period">13xx</xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '14xx')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period">14xx</xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '15xx')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period">15xx</xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="//tei:titleStmt/tei:author/tei:date[(@when, @from-custom, @to-custom, @from, @to)[last()][matches(., '16xx')]]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="period">16xx</xsl:attribute>
+            <xsl:apply-templates select="comment()|processing-instruction()|text()|*"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    
+        </xsl:stylesheet>
+

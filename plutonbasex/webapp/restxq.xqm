@@ -7,36 +7,7 @@ import module namespace croala = "http://www.ffzg.unizg.hr/klafil/croala" at "..
 declare namespace page = 'http://basex.org/examples/web-page';
 
 
-(: count titles total :)
-declare function croala:bibcount() {
-count( collection("croalabib")//*:listBibl/(*:bibl|*:biblStruct)
-)
-};
-(: count persons total :)
-declare function croala:perscount() {
-count( collection("croalabib")//*:listPerson/*:person
-)
-};
-(: count mss total :)
-declare function croala:mscount() {
-count( collection("croalabib")//*:msDesc
-)
-};
-(: count works total :)
-declare function croala:opcount() {
-count( collection("croalabib")//*:listBibl[@ana='croala.opera']/*:bibl
-)
-};
-(: count exemplars total :)
-declare function croala:itemcount() {
-count( collection("croalabib")//*:relatedItem[*:ref/@target]
-)
-};
-(: count digital total :)
-declare function croala:digicount() {
-count( collection("croalabib")//*:relatedItem[descendant-or-self::*[contains(@type, "internet")]]
-)
-};
+
 (:~
  : This function generates the welcome page.
  : @return HTML page

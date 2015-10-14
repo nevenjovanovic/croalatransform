@@ -3,7 +3,7 @@ import module namespace rest = "http://exquery.org/ns/restxq";
 declare namespace page = 'http://basex.org/examples/web-page';
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 
-declare namespace croala = "http://www.ffzg.unizg.hr/klafil/croala";
+declare namespace croala = "http://croala.ffzg.unizg.hr/intro";
 
 (: count sentences total :)
 declare function croala:sentcount() {

@@ -120,5 +120,8 @@
     <servlet-name>default</servlet-name>
     <url-pattern>/static/*</url-pattern>
   </servlet-mapping>
-
+<error-page>
+  <error-code>404</error-code>
+  <location>/static/404-not-found.html</location>
+</error-page>
 </web-app>

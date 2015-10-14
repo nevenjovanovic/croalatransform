@@ -1,5 +1,152 @@
 module namespace croala = "http://www.ffzg.unizg.hr/klafil/croala";
 
+(: add lost functions :)
+
+(: return list of documents in db, with paths, for anatomia :)
+ declare function croala:analist($db) {
+   (: list all documents in a collection, with link to a list of all their element names :)
+element div {
+element h1 { $db } ,
+element ul {
+for $d in collection($db)//*:TEI//*:text
+let $path := db:path($d)
+let $address := $db || '&amp;' || replace($path, '/', '&amp;')
+return element li { 
+element a {
+  attribute href { '/basex/croala-ana/' || $address  } ,
+  $path },
+  croala:anatomia($address)//*:tr[@class='total']/*:td[2]
+}
+}
+}
+ };
+
+declare function croala:homerlist1 ($file) {
+   for $i in db:open('ilias6', $file)//*:seg
+   let $adr := $i/@corresp
+   return element li {
+      element a { croala:homersent2(data($adr))}
+}
+ };
+ 
+ declare function croala:homerlist2 ($urn) {
+   for $i in db:open('ilias6')//*:seg[@corresp=$urn]
+   return element div { 
+   attribute class { "row"} ,
+   element code {
+   for $txt in $i//*:l//text()[parent::*:l or parent::*:corr]
+   return   concat($txt, ' ')
+} }
+ };
+
+(: bcv functions :)
+declare function croala:bcv01 ($db , $string ) {
+  (: bun-cob-vic-find - find any of several strings, return a list of l elements with strings marked, count results :)
+
+let $qq := tokenize($string,' ')
+let $res := element tbody {
+for $d in db:open($db)//*:text//*:l 
+where $d[descendant::text() contains text {$qq}  any]
+return element tr {
+  element td { data($d/@n) } ,
+  element td { ft:mark($d[descendant::text() contains text {$qq}  any], 'code') } ,
+  element td { db:path($d)}
+}
+}
+let $countres := count($res//tr)
+return element span {
+element tr { 
+element td { "Quaesitum: " || $string },
+element td { "Inventum: " || $countres } },
+$res
+}
+};
+ 
+ (: return list of elements with info on parents / children :)
+ declare function croala:anatomia($docpath) {
+   (: for a specific file, return names of all elements below text and count their occurrences; return also names of parents or children of given element :)
+let $d := collection(replace($docpath, '&amp;', '/'))/*:TEI//*:text//*[text()]
+let $distinct := distinct-values($d/name())
+return element tbody {
+  element tr {
+    attribute class {"total"},
+element td {"OMNES"},
+element td { count($distinct) },
+element td {},
+element td {}
+},
+ 
+for $i in $distinct
+order by $i
+let $occur := $d[name()=$i]
+let $parent := $occur/../name()
+let $child := $occur/*/name()
+return element tr {
+    element td { distinct-values($parent) },
+  element td {
+  element code { $i } } ,
+    element td { count($occur) } , 
+  element td { if ($child[1]) then distinct-values($child) else element small { "N/A" } } }
+}
+
+ };
+
+(: make link to query in basex db :)
+declare function croala:philo02 ($qw, $qdb) { 
+let $qstring := "/basex/q/" || $qdb || "/"
+return
+  attribute href { $qstring || $qw } 
+
+ };
+ 
+ (: make link to next sentence :)
+declare function croala:homersent2 ($naziv) { 
+  attribute href { "/basex/homer/" || $naziv } , $naziv
+};
+(: make link to query in philologic / croala :)
+declare function croala:philo01 ($qw, $qfile) { 
+let $qstring := "http://croala.ffzg.unizg.hr/cgi-bin/search3t?dbname=croala&amp;word=REPLACEWORDXXX&amp;OUTPUT=conc&amp;&amp;CONJUNCT=PHRASE&amp;DISTANCE=3&amp;title=&amp;author=&amp;period=&amp;genre=&amp;DFPERIOD=1&amp;POLESPAN=5&amp;THMPRTLIMIT=1&amp;KWSS=1&amp;KWSSPRLIM=500&amp;trsortorder=author%2C+title&amp;dgdivhead=&amp;dgdivtype=&amp;dgdivlang=&amp;dgdivocauthor=&amp;dgdivocdateline=&amp;dgdivocsalutation=&amp;dgsubdivtag=&amp;filename=REPLACEFILEXXX"
+return
+  attribute href { replace(replace($qstring, 'REPLACEWORDXXX', $qw), 'REPLACEFILEXXX', $qfile) } 
+
+ };
+
+(: for given path list distinct values, return them and count of occurrences :)
+
+declare function croala:facet3 ( $path, $naziv ) {
+  let $i := xquery:eval($path, map { '': db:open('croalabib') })
+let $cname := $naziv
+let $ci := distinct-values($i)
+for $item in $ci
+let $count := $i[.=$item]
+order by $item
+return element div {
+  attribute class { "col-md-3"} ,
+  element code { 
+   $item },
+   " (" || count($count) || ")"
+}
+};
+
+
+(: Homer :)
+(: formatting - footer :)
+declare function croala:footerhomer () {
+let $f := <footer class="footer">
+<div class="container">
+<h3> </h3>
+<h1 class="text-center"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> <a href="http://www.ffzg.unizg.hr/klafil">Odsjek za </a> klasičnu filologiju</h1>
+<div class="row">
+<div  class="col-md-6">
+<p class="text-center"><a href="http://www.ffzg.unizg.hr"><img src="/static/gfx/ffzghrlogo.png"/> Filozofski fakultet</a> Sveučilišta u Zagrebu</p> </div>
+</div>
+</div>
+</footer>
+return $f
+};
+
+
+(: to here :)
 (: concatenate multiple entries :)
 declare function croala:is-multiel ($terms) {
   if (some $str in $terms satisfies ($str[2]) ) then concat(data($terms) , ' ')
@@ -15,14 +162,6 @@ declare function croala:wcsve ($db) {
   return count(ft:tokenize($i)) ), "#,##0")
 };
 
-(: make link to query in philologic / croala :)
-declare function croala:philo01 ($qw, $qfile) { 
-let $qstring := "http://croala.ffzg.unizg.hr/cgi-bin/search3t?dbname=croala&amp;word=REPLACEWORDXXX&amp;OUTPUT=conc&amp;&amp;CONJUNCT=PHRASE&amp;DISTANCE=3&amp;title=&amp;author=&amp;period=&amp;genre=&amp;DFPERIOD=1&amp;POLESPAN=5&amp;THMPRTLIMIT=1&amp;KWSS=1&amp;KWSSPRLIM=500&amp;trsortorder=author%2C+title&amp;dgdivhead=&amp;dgdivtype=&amp;dgdivlang=&amp;dgdivocauthor=&amp;dgdivocdateline=&amp;dgdivocsalutation=&amp;dgsubdivtag=&amp;filename=REPLACEFILEXXX"
-return
-  attribute href { replace(replace($qstring, 'REPLACEWORDXXX', $qw), 'REPLACEFILEXXX', $qfile) } 
-
- };
-
 (: make link to file in philologic :)
 declare function croala:solraddr ($db, $txtnode) { 
   attribute href { "http://solr.ffzg.hr/basex/node/" || $db || "/" || data($txtnode) } 
@@ -30,7 +169,7 @@ declare function croala:solraddr ($db, $txtnode) {
  };
 (: make link to file in philologic :)
 declare function croala:localnode ($db, $txtnode) { 
-  attribute href { "/basex/node/" || $db || "/" || data($txtnode) } 
+  attribute href { "/node/" || $db || "/" || data($txtnode) } 
 
  };
 
@@ -98,7 +237,7 @@ element td {
   count(distinct-values($i[db="latty"]/name )) },
 element td {
   element a {
-    attribute href { "/basex/ttr2/" || $time || "/" || $ttr },
+    attribute href { "/ttr2/" || $time || "/" || $ttr },
   "Sectiones ubi TTR est " || $ttr || "."
 }
 }
@@ -314,8 +453,74 @@ declare function croala:repetclaus ($dbc) {
 }
 };
 
+(: return word count and ttrs for a table :)
+(: fields name, period, wc, ttr :)
+
+declare function croala:ttrwc2 ($coll, $db) {
+for $d in collection($coll)//div[db=$db]
+let $ttr := $d/ttr
+order by number($ttr)
+return element tr {
+  element td { data($d/name)},
+  element td { data($d/per)} ,
+  element td { attribute class {"clausula"} , data($d/tok)},
+  element td { attribute class {"clausula"} , data($ttr) }
+}
+};
+
+
+
+(: count titles total :)
+declare function croala:bibcount() {
+count( collection("croalabib")//*:listBibl/(*:bibl|*:biblStruct)
+)
+};
+(: count persons total :)
+declare function croala:perscount() {
+count( collection("croalabib")//*:listPerson/*:person
+)
+};
+(: count mss total :)
+declare function croala:mscount() {
+count( collection("croalabib")//*:msDesc
+)
+};
+(: count works total :)
+declare function croala:opcount() {
+count( collection("croalabib")//*:listBibl[@ana='croala.opera']/*:bibl
+)
+};
+(: count exemplars total :)
+declare function croala:itemcount() {
+count( collection("croalabib")//*:relatedItem[*:ref/@target]
+)
+};
+(: count digital total :)
+declare function croala:digicount() {
+count( collection("croalabib")//*:relatedItem[descendant-or-self::*[contains(@type, "internet")]]
+)
+};
+
 (: formatting - footer :)
 declare function croala:footer () {
+let $f := <footer class="footer">
+<div class="container">
+<h3> </h3>
+<h1 class="text-center"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> <a href="http://solr.ffzg.hr/dokuwiki/doku.php/start">Croatica et</a> Tyrolensia</h1>
+<div class="row">
+<div  class="col-md-3">
+<a href="http://www.ukf.hr/"><img src="/static/gfx/ukflogo.gif"/></a></div> 
+<div  class="col-md-6">
+<p class="text-center"><a href="http://www.ffzg.unizg.hr"><img src="/static/gfx/ffzghrlogo.png"/> Filozofski fakultet</a> Sveučilišta u Zagrebu</p> 
+<p class="text-center">Ludwig Boltzmann <a href="http://neolatin.lbg.ac.at/">Institut für Neulateinische Studien, Innsbruck</a> <img src="http://lbicr.lbg.ac.at/files/sites/lbicr/images/bildlogo_farbe_weiss.jpg" width="60"/></p></div>
+<div  class="col-md-3"><p  class="text-center"><a href="https://www.tirol.gv.at/bildung/wissenschaftsfonds/"><img src="/static/gfx/tirollogo.png"/></a></p></div></div>
+</div>
+</footer>
+return $f
+};
+
+(: formatting - footer on solr :)
+declare function croala:footerserver () {
 let $f := <footer class="footer">
 <div class="container">
 <h3> </h3>
@@ -332,21 +537,33 @@ let $f := <footer class="footer">
 return $f
 };
 
-(: formatting - footer :)
-declare function croala:footerhomer () {
-let $f := <footer class="footer">
-<div class="container">
-<h3> </h3>
-<h1 class="text-center"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> <a href="http://www.ffzg.unizg.hr/klafil">Odsjek za </a> klasičnu filologiju</h1>
-<div class="row">
-<div  class="col-md-6">
-<p class="text-center"><a href="http://www.ffzg.unizg.hr"><img src="/static/gfx/ffzghrlogo.png"/> Filozofski fakultet</a> Sveučilišta u Zagrebu</p> </div>
-</div>
-</div>
-</footer>
-return $f
-};
 
+(: script for tablesorter, Croatian sorting order :)
+declare function croala:tablescript () {
+  let $script := element script {
+    "
+    $(function() {
+  // define sugar.js Croatian sort order
+  Array.AlphanumericSortOrder = 'AaBbCcČčĆćDdÐđEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsŠšTtUuVvWwZzŽžXxYy';
+  Array.AlphanumericSortIgnoreCase = true;
+  // see https://github.com/andrewplummer/Sugar/issues/382#issuecomment-41526957
+  Array.AlphanumericSortEquivalents = {};
+  
+  $('table').tablesorter({
+    theme : 'blue',
+    // table = table object; get config options from table.config
+    // column is the column index (zero-based)
+    ignoreCase : false,
+    textSorter : {
+      1 : Array.AlphanumericSort,     // alphanumeric sort from sugar (http://sugarjs.com/arrays#sorting)
+      
+    }
+  });
+});
+    "
+    }
+    return $script
+};
 
 declare function croala:facet ( $naziv ) {
   let $map := map {
@@ -362,8 +579,7 @@ declare function croala:facet ( $naziv ) {
    'RHK' : '//*:body/*:listBibl[@type="croala.drama"]/*:bibl[@type="drama"]/*:ref', 
    'naslovi_latinski' : '//*:body/*:listBibl[@type="croala.drama"]/*:bibl[@type="drama"]/*:title[@xml:lang="lat" and text()]', 
   'naslovi_hrvatski' : '//*:body/*:listBibl[@type="croala.drama"]/*:bibl[@type="drama"]/*:title[@xml:lang="hrv" and text()]',
-   'bibliografija_naslovi' : '//*:body/*:listBibl[@type="croala.drama.sekundarna"]/*:bibl',
-    'osobe' : '//*:body/*:listBibl[@type="croala.drama"]//*:persName'
+   'bibliografija_naslovi' : '//*:body/*:listBibl[@type="croala.drama.sekundarna"]/*:bibl'
   }
   let $i := xquery:eval(map:get($map,$naziv), map { '': db:open('croalabib', 'manifestacije/tisak/drame.xml') })
 for $ci in distinct-values($i)
@@ -393,38 +609,158 @@ declare function croala:facetlink ($naziv) {
   attribute href { "/basex/croalabib2/facet/" || $naziv } , $naziv
 
  };
- 
-(: script for tablesorter :)
-declare function croala:tablescript () {
-  let $script := element script {
-    "$(function(){
-  $('#myTable').tablesorter();
-});"
-    }
-    return $script
+
+(: make link to next facet :)
+declare function croala:facetlink1 ($naziv) { 
+  attribute href { "/croalabib2/facet/" || $naziv } , $naziv
+
+ };
+(: hrefs for authority files :)
+declare function croala:authidhref($type, $target) {
+let $aid := map {
+  "viaf": "http://viaf.org/viaf/",
+  "pnd": "http://d-nb.info/gnd/",
+  "lc": "http://id.loc.gov/authorities/names/",
+  "cerl": "http://thesaurus.cerl.org/record/",
+  "croala.typ": "#"
+}
+return map:get($aid , $type) || data($target)
 };
 
- (: make link to next sentence :)
-declare function croala:homersent2 ($naziv) { 
-  attribute href { "/basex/homer/" || $naziv } , $naziv
+(: make link to query in basex db :)
+declare function croala:philo02a ($qw, $qdb) { 
+let $qstring := "/basex/q/" || $qdb || "/"
+return
+  attribute href { $qstring || $qw } 
 
  };
  
- declare function croala:homerlist1 ($file) {
-   for $i in db:open('ilias6', $file)//*:seg
-   let $adr := $i/@corresp
-   return element li {
-      element a { croala:homersent2(data($adr))}
+ declare function croala:infodb($dbname) {
+  (: return info on croalabib db, with Latin field names :)
+let $week := map {
+  "name": "nomen",
+  "documents": "documenta",
+  "timestamp": "de dato"
 }
- };
- 
- declare function croala:homerlist2 ($urn) {
-   for $i in db:open('ilias6')//*:seg[@corresp=$urn]
-   return element div { 
-   attribute class { "row"} ,
-   element code {
-   for $txt in $i//*:l//text()[parent::*:l or parent::*:corr]
-   return   concat($txt, ' ')
-} }
- };
+return element table { 
+attribute class { "pull-right"},
+let $i := db:info($dbname)/databaseproperties
+  for $n in ('name','documents','timestamp')
+  return 
+   element tr {
+    element td { map:get($week, $n) } ,
+    element td { $i/*[name()=$n] }
+  }
+}
+};
+declare function croala:htmlhead($title) {
+  (: return html template to be filled with title :)
+  (: title should be declared as variable in xq :)
 
+<head><title> { $title } </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" href="/static/gfx/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/static/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/dist/css/basexc.css"/>
+</head>
+
+};
+
+declare function croala:htmlhead-tablesorter($title) {
+  (: return html template to be filled with title :)
+  (: title should be declared as variable in xq :)
+(: call scripts tablesorter, sugar :)
+<head><title> { $title } </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" href="/static/gfx/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/static/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/dist/css/basexc.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/static/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sugar/1.4.1/sugar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.23.5/js/jquery.tablesorter.min.js"></script>
+</head>
+
+};
+
+(: the same, for server / basex :)
+declare function croala:htmlhead-tablesorter-server($title) {
+  (: return html template to be filled with title :)
+  (: title should be declared as variable in xq :)
+(: call scripts tablesorter, sugar :)
+<head><title> { $title } </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" href="/basex/static/gfx/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/basexc.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sugar/1.4.1/sugar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.23.5/js/jquery.tablesorter.min.js"></script>
+</head>
+
+};
+
+declare function croala:htmlheadserver($title) {
+  (: return html template to be filled with title :)
+  (: title should be declared as variable in xq :)
+
+<head><title> { $title } </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" href="/basex/static/gfx/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/basexc.css"/>
+</head>
+
+};
+
+declare function croala:getwdatapersons() {
+  element table { 
+  element thead {
+    element tr {
+      element td {"Nomina"},
+      element td {"Wikidata"},
+      element td {"In fabula"}
+    } },
+  element tbody {
+  for $i in collection("croalabib")//*:person[not(@sameAs) and *:bibl/*:relatedItem/*:ref[contains(@target,'wikidata')]]
+  let $q := $i/*:bibl/*:relatedItem/*:ref[contains(@target,'wikidata')]
+  return element tr { element td { $i/*:persName[1] } , 
+  element td {
+    element a {
+      attribute href { $q/@target } ,
+      replace($q[1]/@target,'https://www.wikidata.org/wiki/','')
+    }
+  },
+  element td {
+    if ($i/*:note/*:ref/@target) then
+    for $drama in $i/*:note/*:ref/@target
+    return 
+    element a {
+      attribute href {
+        "/basex/dramata" || replace($drama, '#', '/')
+      },
+      replace(data($drama),'#','')
+    }
+    else if ($i//*:event[@ana='drama']/*:desc/*:name/@ref) then
+    for $drama2 in $i//*:event[@ana='drama']/*:desc/*:name/@ref
+    return 
+    element a {
+      attribute href {
+        "/basex/dramata" || replace($drama2, '#', '/')
+      },
+      replace(data($drama2),'#','')
+    }
+    else "N/A"
+  }  }
+}
+}
+};
+
+(: a page for each drama :)
+declare function croala:dramatitlepage($dramaid) {
+  let $i := collection('croalabib')//*:bibl[@xml:id=$dramaid]
+  return element div {
+    attribute class { "dramainfo"},
+    $i
+  }
+};

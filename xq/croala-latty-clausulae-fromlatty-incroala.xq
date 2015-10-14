@@ -1,0 +1,1826 @@
+(: using a list of clausulae in LatTy occurring in CroALa, return names of documents and node ids in croala :)
+let $croalaclausulae := element tbody {
+for $uniq in
+let $multi :=
+let $table := <tbody>
+			<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/53385">LatTy</a>
+  </td>
+  <td>a certamine</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/13984">LatTy</a>
+  </td>
+  <td>diversus ab illo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/23989">LatTy</a>
+  </td>
+  <td>legit ab omni</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24733">LatTy</a>
+  </td>
+  <td>prospexit ab alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24956">LatTy</a>
+  </td>
+  <td>delapsus ab alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31586">LatTy</a>
+  </td>
+  <td>primus ab oris</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31672">LatTy</a>
+  </td>
+  <td>solis ab ortu</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35369">LatTy</a>
+  </td>
+  <td>pectore ab uno</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35391">LatTy</a>
+  </td>
+  <td>pectore ab uno</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/44625">LatTy</a>
+  </td>
+  <td>infit ab alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47041">LatTy</a>
+  </td>
+  <td>miseratus ab alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49848">LatTy</a>
+  </td>
+  <td>aethere ab alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50256">LatTy</a>
+  </td>
+  <td>aethere ab alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/77715">LatTy</a>
+  </td>
+  <td>studiosus ab annis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/78152">LatTy</a>
+  </td>
+  <td>descendit ab alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34455">LatTy</a>
+  </td>
+  <td>malus abstulit error</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/14130">LatTy</a>
+  </td>
+  <td>tendis ad urbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/28455">LatTy</a>
+  </td>
+  <td>solis ad ortum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35286">LatTy</a>
+  </td>
+  <td>legatus ad urbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36519">LatTy</a>
+  </td>
+  <td>pervenit ad aures</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36964">LatTy</a>
+  </td>
+  <td>demittit ad umbras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34896">LatTy</a>
+  </td>
+  <td>comes additur una</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34651">LatTy</a>
+  </td>
+  <td>tot adire labores</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35793">LatTy</a>
+  </td>
+  <td>paucis adverte docebo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82300">LatTy</a>
+  </td>
+  <td>omnibus aequum est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/26328">LatTy</a>
+  </td>
+  <td>ad aethera palmas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37019">LatTy</a>
+  </td>
+  <td>super aethera nomen</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/46007">LatTy</a>
+  </td>
+  <td>super aethera mentem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36379">LatTy</a>
+  </td>
+  <td>decora alta parentum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/83613">LatTy</a>
+  </td>
+  <td>sublimibus alta columnis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33243">LatTy</a>
+  </td>
+  <td>ab alto est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36462">LatTy</a>
+  </td>
+  <td>et amoena vireta</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32235">LatTy</a>
+  </td>
+  <td>spolia ampla reportat</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/48787">LatTy</a>
+  </td>
+  <td>mecum ante peregi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/14072">LatTy</a>
+  </td>
+  <td>per aperta viarum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32536">LatTy</a>
+  </td>
+  <td>pugna aspera surgit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36059">LatTy</a>
+  </td>
+  <td>malus auferat error</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/30016">LatTy</a>
+  </td>
+  <td>gens aurea mundo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33773">LatTy</a>
+  </td>
+  <td>ad bella cohortes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35822">LatTy</a>
+  </td>
+  <td>dum bella gerebat</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82597">LatTy</a>
+  </td>
+  <td>sit caeca cupido</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/48625">LatTy</a>
+  </td>
+  <td>caesar adest</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50014">LatTy</a>
+  </td>
+  <td>odora canum vis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52885">LatTy</a>
+  </td>
+  <td>caput abdidit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47586">LatTy</a>
+  </td>
+  <td>mihi carior alter</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/13987">LatTy</a>
+  </td>
+  <td>in carmina vires</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37479">LatTy</a>
+  </td>
+  <td>in carmina vires</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45523">LatTy</a>
+  </td>
+  <td>inter celeberrima nymphas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37223">LatTy</a>
+  </td>
+  <td>magna comitante caterva</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/78254">LatTy</a>
+  </td>
+  <td>procerum comitante caterva</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/23956">LatTy</a>
+  </td>
+  <td>ob commissa parentis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33505">LatTy</a>
+  </td>
+  <td>in corpore vires</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35761">LatTy</a>
+  </td>
+  <td>in corpore vires</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37047">LatTy</a>
+  </td>
+  <td>in corpore vires</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47616">LatTy</a>
+  </td>
+  <td>in corpore sanguis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50643">LatTy</a>
+  </td>
+  <td>in corpore sanguis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82364">LatTy</a>
+  </td>
+  <td>in corpore quovis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29290">LatTy</a>
+  </td>
+  <td>de crimine poenas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35777">LatTy</a>
+  </td>
+  <td>sine crimine vitam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52014">LatTy</a>
+  </td>
+  <td>qui cuncta gubernas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36660">LatTy</a>
+  </td>
+  <td>mea dextera letho</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40519">LatTy</a>
+  </td>
+  <td>nomine dicta est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47280">LatTy</a>
+  </td>
+  <td>neque dira tyranni</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33498">LatTy</a>
+  </td>
+  <td>magno discordia motu</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/26089">LatTy</a>
+  </td>
+  <td>tot discrimina rerum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33157">LatTy</a>
+  </td>
+  <td>nunc dividit illuc</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32255">LatTy</a>
+  </td>
+  <td>peditumque equitumque phalanges</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82661">LatTy</a>
+  </td>
+  <td>haec erroris origo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/28385">LatTy</a>
+  </td>
+  <td>procul este profani</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/27494">LatTy</a>
+  </td>
+  <td>rhenus et ister</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/27605">LatTy</a>
+  </td>
+  <td>garamantes et indi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34177">LatTy</a>
+  </td>
+  <td>instat et urget</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35091">LatTy</a>
+  </td>
+  <td>garamantas et indos</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40566">LatTy</a>
+  </td>
+  <td>urbis et orbis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82594">LatTy</a>
+  </td>
+  <td>mater et aequi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/14171">LatTy</a>
+  </td>
+  <td>excipit ore</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33147">LatTy</a>
+  </td>
+  <td>ingentibus excita monstris</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/53753">LatTy</a>
+  </td>
+  <td>velut experrecta sopore</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40181">LatTy</a>
+  </td>
+  <td>caput extulit alveo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35353">LatTy</a>
+  </td>
+  <td>et facta parentum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/25325">LatTy</a>
+  </td>
+  <td>capessere fas est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29596">LatTy</a>
+  </td>
+  <td>post fata parentis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36337">LatTy</a>
+  </td>
+  <td>dum fata sinebant</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/41905">LatTy</a>
+  </td>
+  <td>fata minatur</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24937">LatTy</a>
+  </td>
+  <td>de faucibus orci</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36734">LatTy</a>
+  </td>
+  <td>vox faucibus haesit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47193">LatTy</a>
+  </td>
+  <td>vox faucibus haeret</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49351">LatTy</a>
+  </td>
+  <td>vox faucibus haeret</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49387">LatTy</a>
+  </td>
+  <td>vox faucibus haeret</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/77407">LatTy</a>
+  </td>
+  <td>uox faucibus haeret</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35522">LatTy</a>
+  </td>
+  <td>sub fine laborum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36008">LatTy</a>
+  </td>
+  <td>nulla formidine captus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32623">LatTy</a>
+  </td>
+  <td>et fortia facta</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35375">LatTy</a>
+  </td>
+  <td>et fortia facta</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/44454">LatTy</a>
+  </td>
+  <td>et fortibus ausis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33969">LatTy</a>
+  </td>
+  <td>duro fortissima bello</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47181">LatTy</a>
+  </td>
+  <td>rerum fortuna mearum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40187">LatTy</a>
+  </td>
+  <td>saturo fucata colore</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33205">LatTy</a>
+  </td>
+  <td>quis funera fando</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/41083">LatTy</a>
+  </td>
+  <td>quis funera fando</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34686">LatTy</a>
+  </td>
+  <td>et gloria tollit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49164">LatTy</a>
+  </td>
+  <td>tibi gloria maior</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/78533">LatTy</a>
+  </td>
+  <td>tua gloria princeps</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/28461">LatTy</a>
+  </td>
+  <td>per gramina guttae</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33706">LatTy</a>
+  </td>
+  <td>sub gurgite vasto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/77570">LatTy</a>
+  </td>
+  <td>mortalibus haec est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/78282">LatTy</a>
+  </td>
+  <td>dignus honore est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34039">LatTy</a>
+  </td>
+  <td>verbis hortatur amicis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32347">LatTy</a>
+  </td>
+  <td>in hoste requirat</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29141">LatTy</a>
+  </td>
+  <td>et humida siccis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/77557">LatTy</a>
+  </td>
+  <td>micat ignibus aether</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29201">LatTy</a>
+  </td>
+  <td>per ilia ferro</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49282">LatTy</a>
+  </td>
+  <td>non ille minervam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33636">LatTy</a>
+  </td>
+  <td>per ima cucurrit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36446">LatTy</a>
+  </td>
+  <td>non immemor umquam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/51510">LatTy</a>
+  </td>
+  <td>dabis improbe poenas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/23866">LatTy</a>
+  </td>
+  <td>aethere in alto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/28474">LatTy</a>
+  </td>
+  <td>lucis in auras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29465">LatTy</a>
+  </td>
+  <td>versat in orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32251">LatTy</a>
+  </td>
+  <td>exarsit in iras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32507">LatTy</a>
+  </td>
+  <td>moriturus in hostes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32690">LatTy</a>
+  </td>
+  <td>omnis in unum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33192">LatTy</a>
+  </td>
+  <td>limine in ipso</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33648">LatTy</a>
+  </td>
+  <td>exarsit in iras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36081">LatTy</a>
+  </td>
+  <td>recessit in auras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36398">LatTy</a>
+  </td>
+  <td>differ in horas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36702">LatTy</a>
+  </td>
+  <td>miles in armis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36910">LatTy</a>
+  </td>
+  <td>produxit in auras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40634">LatTy</a>
+  </td>
+  <td>descendit in agros</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40698">LatTy</a>
+  </td>
+  <td>descendit in agros</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/46783">LatTy</a>
+  </td>
+  <td>vanescat in auras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/54473">LatTy</a>
+  </td>
+  <td>exarsit in iras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35697">LatTy</a>
+  </td>
+  <td>laudumque incensus amore</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36737">LatTy</a>
+  </td>
+  <td>sic incipit ore</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35436">LatTy</a>
+  </td>
+  <td>ille inclytus armis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31711">LatTy</a>
+  </td>
+  <td>quorum indiget usus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/23853">LatTy</a>
+  </td>
+  <td>nuptae innuptaeque puellae</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34689">LatTy</a>
+  </td>
+  <td>genus insuperabile bello</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49558">LatTy</a>
+  </td>
+  <td>sacrosque intrate penates</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29246">LatTy</a>
+  </td>
+  <td>ad jussa ministros</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49098">LatTy</a>
+  </td>
+  <td>tot labentibus annis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52349">LatTy</a>
+  </td>
+  <td>tot labentibus annis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/14184">LatTy</a>
+  </td>
+  <td>laeta recepit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45496">LatTy</a>
+  </td>
+  <td>dextra laevaque frequentes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36532">LatTy</a>
+  </td>
+  <td>pro laude pacisci</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34912">LatTy</a>
+  </td>
+  <td>pro libertate ruebant</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29532">LatTy</a>
+  </td>
+  <td>ad limina portae</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33642">LatTy</a>
+  </td>
+  <td>et litora cursu</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29634">LatTy</a>
+  </td>
+  <td>in luce refulgens</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24990">LatTy</a>
+  </td>
+  <td>sua lumina flexit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/46768">LatTy</a>
+  </td>
+  <td>et lustra ferarum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37159">LatTy</a>
+  </td>
+  <td>et magna voluptas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/15237">LatTy</a>
+  </td>
+  <td>et marte secundo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36571">LatTy</a>
+  </td>
+  <td>pars maxima belli</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32210">LatTy</a>
+  </td>
+  <td>et maximus armis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36497">LatTy</a>
+  </td>
+  <td>non maximus aevo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49375">LatTy</a>
+  </td>
+  <td>reddita mens est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/27010">LatTy</a>
+  </td>
+  <td>ac mente volutat</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32139">LatTy</a>
+  </td>
+  <td>alta mente repostum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82348">LatTy</a>
+  </td>
+  <td>si mihi centum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52035">LatTy</a>
+  </td>
+  <td>quae miracula cerno</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33543">LatTy</a>
+  </td>
+  <td>sibi moenia reddi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31967">LatTy</a>
+  </td>
+  <td>veterum monumenta parentum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/30515">LatTy</a>
+  </td>
+  <td>de more ministri</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47665">LatTy</a>
+  </td>
+  <td>de more bidentes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/46807">LatTy</a>
+  </td>
+  <td>velle necesse est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82515">LatTy</a>
+  </td>
+  <td>parte necesse est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/41092">LatTy</a>
+  </td>
+  <td>vix nomina restant</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35414">LatTy</a>
+  </td>
+  <td>tibi nominis omen</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/51924">LatTy</a>
+  </td>
+  <td>te numina firment</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36232">LatTy</a>
+  </td>
+  <td>sine numine divum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37364">LatTy</a>
+  </td>
+  <td>cui numine divum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50953">LatTy</a>
+  </td>
+  <td>sine numine divum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52086">LatTy</a>
+  </td>
+  <td>pressoque obmutuit ore</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45603">LatTy</a>
+  </td>
+  <td>respondent omnia votis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32031">LatTy</a>
+  </td>
+  <td>magis omnibus unam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34427">LatTy</a>
+  </td>
+  <td>magis omnibus unam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45989">LatTy</a>
+  </td>
+  <td>magis omnibus unum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/46192">LatTy</a>
+  </td>
+  <td>magis omnibus unam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/25385">LatTy</a>
+  </td>
+  <td>verso ordine rerum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32274">LatTy</a>
+  </td>
+  <td>ex ordine menses</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24768">LatTy</a>
+  </td>
+  <td>sic ore profatur</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24222">LatTy</a>
+  </td>
+  <td>ab origine mundi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31602">LatTy</a>
+  </td>
+  <td>ab origine gentem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47692">LatTy</a>
+  </td>
+  <td>ab origine mundi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49101">LatTy</a>
+  </td>
+  <td>ab origine gentis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49110">LatTy</a>
+  </td>
+  <td>ab origine rerum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/78058">LatTy</a>
+  </td>
+  <td>ab origine mundi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34046">LatTy</a>
+  </td>
+  <td>pugnaeque parant se</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35212">LatTy</a>
+  </td>
+  <td>ex partibus orbis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45735">LatTy</a>
+  </td>
+  <td>mea pectora curis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/54080">LatTy</a>
+  </td>
+  <td>complevit pectora luctu</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/13809">LatTy</a>
+  </td>
+  <td>sub pectore sensus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/15008">LatTy</a>
+  </td>
+  <td>in pectore motus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/28636">LatTy</a>
+  </td>
+  <td>in pectore motus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34721">LatTy</a>
+  </td>
+  <td>et pectore toto</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34985">LatTy</a>
+  </td>
+  <td>sub pectore curas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36740">LatTy</a>
+  </td>
+  <td>e pectore vocem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37102">LatTy</a>
+  </td>
+  <td>e pectore voces</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/48461">LatTy</a>
+  </td>
+  <td>tu pectore conde</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47808">LatTy</a>
+  </td>
+  <td>equitum peditumque cohortes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/25204">LatTy</a>
+  </td>
+  <td>jura per orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29484">LatTy</a>
+  </td>
+  <td>jussa per auras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/30531">LatTy</a>
+  </td>
+  <td>missa per auras</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31612">LatTy</a>
+  </td>
+  <td>celebrata per annos</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35340">LatTy</a>
+  </td>
+  <td>ferre per orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35825">LatTy</a>
+  </td>
+  <td>fama per urbes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36388">LatTy</a>
+  </td>
+  <td>excoluere per artes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36401">LatTy</a>
+  </td>
+  <td>volitare per ora</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36686">LatTy</a>
+  </td>
+  <td>regnare per orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36852">LatTy</a>
+  </td>
+  <td>vulgare per orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37374">LatTy</a>
+  </td>
+  <td>multosque per annos</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40711">LatTy</a>
+  </td>
+  <td>camposque per omnes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45600">LatTy</a>
+  </td>
+  <td>ire per arva</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45861">LatTy</a>
+  </td>
+  <td>fama per orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50262">LatTy</a>
+  </td>
+  <td>nocte per umbram</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50397">LatTy</a>
+  </td>
+  <td>fama per orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52566">LatTy</a>
+  </td>
+  <td>fama per orbem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/77656">LatTy</a>
+  </td>
+  <td>celebrata per annos</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82049">LatTy</a>
+  </td>
+  <td>exculta per artes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/54588">LatTy</a>
+  </td>
+  <td>tum percitus ira</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36359">LatTy</a>
+  </td>
+  <td>tantos perferre labores</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36078">LatTy</a>
+  </td>
+  <td>et plura volentem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36619">LatTy</a>
+  </td>
+  <td>in praecordia virtus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/14941">LatTy</a>
+  </td>
+  <td>non praestantior ulla</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37422">LatTy</a>
+  </td>
+  <td>non praestantior alter</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40647">LatTy</a>
+  </td>
+  <td>non praestantior alter</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/41247">LatTy</a>
+  </td>
+  <td>non praestantior alter</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45962">LatTy</a>
+  </td>
+  <td>non praestantior alter</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45852">LatTy</a>
+  </td>
+  <td>inter pulcherrima nymphas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31100">LatTy</a>
+  </td>
+  <td>terque quaterque beati</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/83607">LatTy</a>
+  </td>
+  <td>terque quaterque beati</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29793">LatTy</a>
+  </td>
+  <td>a radicibus imis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36209">LatTy</a>
+  </td>
+  <td>de rebus habebant</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37230">LatTy</a>
+  </td>
+  <td>de rebus habebant</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36094">LatTy</a>
+  </td>
+  <td>et reddere voces</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36449">LatTy</a>
+  </td>
+  <td>hos reget artus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36020">LatTy</a>
+  </td>
+  <td>magni regnator olympi</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36203">LatTy</a>
+  </td>
+  <td>patres sanctumque senatum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31535">LatTy</a>
+  </td>
+  <td>a sanguine divum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32645">LatTy</a>
+  </td>
+  <td>regali sanguine cretus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34257">LatTy</a>
+  </td>
+  <td>det sanguine poenas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36884">LatTy</a>
+  </td>
+  <td>quo sanguine cretus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45529">LatTy</a>
+  </td>
+  <td>a sanguine divum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45559">LatTy</a>
+  </td>
+  <td>sate sanguine divum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/45864">LatTy</a>
+  </td>
+  <td>a sanguine divum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/48228">LatTy</a>
+  </td>
+  <td>cum sanguine vitam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/77687">LatTy</a>
+  </td>
+  <td>sit sanguine cretus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50017">LatTy</a>
+  </td>
+  <td>faunos satyrosque bicornes</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/48730">LatTy</a>
+  </td>
+  <td>mihi semper honore</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/14235">LatTy</a>
+  </td>
+  <td>ad sidera tollit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32987">LatTy</a>
+  </td>
+  <td>ad sidera notus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36196">LatTy</a>
+  </td>
+  <td>et sidera parent</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47484">LatTy</a>
+  </td>
+  <td>duroque simillima saxo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/47056">LatTy</a>
+  </td>
+  <td>duri solatia casus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/26711">LatTy</a>
+  </td>
+  <td>adverso sole colores</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40491">LatTy</a>
+  </td>
+  <td>de stirpe creatus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/53561">LatTy</a>
+  </td>
+  <td>de stirpe quiritum</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34375">LatTy</a>
+  </td>
+  <td>mole sua stat</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24634">LatTy</a>
+  </td>
+  <td>corde sub imo</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/27373">LatTy</a>
+  </td>
+  <td>porrecta sub axem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/46156">LatTy</a>
+  </td>
+  <td>o summa potestas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49025">LatTy</a>
+  </td>
+  <td>o summa potestas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50890">LatTy</a>
+  </td>
+  <td>o summa potestas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/53689">LatTy</a>
+  </td>
+  <td>ducens suspiria corde</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/24045">LatTy</a>
+  </td>
+  <td>nil tale merentem</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36491">LatTy</a>
+  </td>
+  <td>dehinc talia fatur</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/33195">LatTy</a>
+  </td>
+  <td>pro talibus ausis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/83652">LatTy</a>
+  </td>
+  <td>hanc tangere metam</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/26079">LatTy</a>
+  </td>
+  <td>cui tanta potestas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49131">LatTy</a>
+  </td>
+  <td>te sequar</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/40351">LatTy</a>
+  </td>
+  <td>praecinctus tempora lauro</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36699">LatTy</a>
+  </td>
+  <td>hic terminus haeret</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/82547">LatTy</a>
+  </td>
+  <td>partem totius esse</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/28974">LatTy</a>
+  </td>
+  <td>spes una salusque</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/27522">LatTy</a>
+  </td>
+  <td>ad usque columnas</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34164">LatTy</a>
+  </td>
+  <td>cursus variosque recursus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/28449">LatTy</a>
+  </td>
+  <td>cum vere tepenti</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/53064">LatTy</a>
+  </td>
+  <td>via pervia</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32991">LatTy</a>
+  </td>
+  <td>et victricibus armis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/49426">LatTy</a>
+  </td>
+  <td>vindice dextra</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/78279">LatTy</a>
+  </td>
+  <td>cum virgine sponsa</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29974">LatTy</a>
+  </td>
+  <td>non viribus aequis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/34084">LatTy</a>
+  </td>
+  <td>non viribus aequis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32450">LatTy</a>
+  </td>
+  <td>densusque viro vir</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31596">LatTy</a>
+  </td>
+  <td>nulli virtute secundus</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/48458">LatTy</a>
+  </td>
+  <td>sententia visa est</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/35266">LatTy</a>
+  </td>
+  <td>dum vita manebat</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/37329">LatTy</a>
+  </td>
+  <td>dum vita manebat</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/48733">LatTy</a>
+  </td>
+  <td>dum vita manebit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/50220">LatTy</a>
+  </td>
+  <td>dum vita manebit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52361">LatTy</a>
+  </td>
+  <td>dum vita manebit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/52394">LatTy</a>
+  </td>
+  <td>dum vita manebit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/31682">LatTy</a>
+  </td>
+  <td>et vitibus almis</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/29850">LatTy</a>
+  </td>
+  <td>haec voce profatur</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/36839">LatTy</a>
+  </td>
+  <td>fugientem voce sequuntur</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/53817">LatTy</a>
+  </td>
+  <td>in vota vocavit</td>
+</tr>
+<tr>
+  <td>
+    <a href="http://solr.ffzg.hr/basex/node/latty/32155">LatTy</a>
+  </td>
+  <td>de vulnere sanguis</td>
+</tr>
+			</tbody>
+for $claus in $table//tr/td[2]
+order by $claus
+return element table { $claus }
+return distinct-values($multi/td)
+for $link in collection("croalaclausulae")//c[text() contains text {$uniq} using fuzzy]/@id
+return 
+element tr {
+  element td { $uniq } ,
+  element td {
+    element a {
+  attribute href { "http://solr.ffzg.hr/basex/node/croala/" || data($link) },
+db:path(db:open-pre("croala", data($link)))
+}
+
+},
+element td {
+  db:open-pre("croala", data($link))
+}
+}
+
+}
+for $clstot in $croalaclausulae//tr
+let $filename := $clstot/td[2]
+group by $filename
+order by $filename
+return 
+element tr { 
+element td {$filename } , 
+element td { count($clstot)} ,
+element td { string-join(data($clstot/td[3]), ' / ') }
+}
+
