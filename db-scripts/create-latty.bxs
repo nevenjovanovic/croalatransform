@@ -1,0 +1,1 @@
+XQUERY db:create("latty", "/home/neven/ownCloud/documents/tirol/alatyr/xml Texte/", (), map { 'ftindex': true(), 'chop': false(), 'intparse' : true() })

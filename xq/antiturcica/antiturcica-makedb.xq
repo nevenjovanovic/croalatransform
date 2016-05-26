@@ -1,0 +1,2 @@
+let $text := file:read-text('/home/neven/ownCloud/documents/latinisti/materpdf/antiturcica/1601croatianantiturkish.csv')
+return file:write("/home/neven/ownCloud/documents/latinisti/materpdf/antiturcica/croantitur.xml", csv:parse($text, map { 'header': true() }))

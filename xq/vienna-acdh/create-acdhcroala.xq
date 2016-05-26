@@ -1,0 +1,2 @@
+(: create acdhcroala db from a directory with xml files :)
+db:create("acdhcroala", "/home/neven/rad/vienna/tokenized/" , (), map { 'ftindex': true(), 'intparse': true(), 'stripns': true(), 'chop': false() })

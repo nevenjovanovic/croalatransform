@@ -1,0 +1,1 @@
+XQUERY data(db:info("croala0")//*:resourceproperties/*:timestamp)

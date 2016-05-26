@@ -1,0 +1,1 @@
+db:create("pdillclausulae", "/home/neven/rad/croala-r/pdill01clausulae.xml" , "pdillclausulae.xml", map { 'ftindex': true(), 'intparse': true(), 'chop': false() })

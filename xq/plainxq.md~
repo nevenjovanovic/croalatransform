@@ -1,0 +1,4 @@
+# Plain XQuery scripts
+
+These scripts are used in BaseX GUI, as prototypes, for large-scale transformations, and for processor-intensive operations.
+

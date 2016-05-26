@@ -1,0 +1,25 @@
+# Description of documentation
+
+The Markdown files contain lists of scripts with brief explanations.
+
+## RESTXQ
+
+RESTXQ scripts, in which XQuery is used as a server-side processing language for the Web, are described in [xqlist.md](plutonbasex/xqlist.md).
+
+## XQuery
+
+"Plain" XQuery scripts, used mostly in BaseX GUI, are listed and described in [plainxq.md](xq/plainxq.md).
+
+## XSL
+
+XSL stylesheets
+
+## TEI ODD
+TEI ODD schema files for CroALa, CroALaBib, and LatTy
+
+## Shell scripts
+
+Scripts which validate XML, update databases and publish them on servers
+
+## Tests
+

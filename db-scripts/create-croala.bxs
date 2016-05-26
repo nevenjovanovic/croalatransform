@@ -1,0 +1,1 @@
+XQUERY db:create("croala0", "/home/neven/rad/croala-r/basex/txts/", (), map { 'ftindex': true(), 'chop': false(), 'intparse' : true() })

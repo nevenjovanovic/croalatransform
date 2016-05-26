@@ -1,0 +1,6 @@
+element lexicon {
+  for $h in //*:h
+return element word {
+  $h , $h/following-sibling::*:p[1] , $h/following-sibling::*:p[2]
+}
+}
