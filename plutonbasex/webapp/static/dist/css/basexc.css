@@ -139,6 +139,18 @@ p > note {
   background-color: #ededed;
 }
 
+l > note::before {
+content: "\00a0\0028" ;
+}
+
+l > note::after {
+content: "\0029\00a0" ;
+}
+
+l > note {
+color: red;
+}
+
 author {
   padding: 2px 4px;
   font-size: 90%;

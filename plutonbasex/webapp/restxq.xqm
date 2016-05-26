@@ -2,11 +2,12 @@
  : This module contains some basic examples for RESTXQ annotations and some croalabib queries
  : @author BaseX Team, Neven Jovanović
  :)
+import module namespace rest = "http://exquery.org/ns/restxq";
 import module namespace croala = "http://www.ffzg.unizg.hr/klafil/croala" at "../repo/croala.xqm";
 
 declare namespace page = 'http://basex.org/examples/web-page';
 
-
+declare variable $title := "Croatiae auctorum Latinorum bibliographia";
 
 (:~
  : This function generates the welcome page.
@@ -19,16 +20,9 @@ declare
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
   %output:doctype-system("http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd")
   function page:start()
-  as element(Q{http://www.w3.org/1999/xhtml}html)
 {
-  <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-      <title>: croalabib :</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="icon" href="/basex/static/gfx/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/basexc.css"/>
-    </head>
+  
+  element html { croala:htmlheadserver($title) ,
     <body>
     <div class="header">
     <ul class="nav nav-pills pull-right">
@@ -36,12 +30,11 @@ declare
     <h3 class="text-muted"> </h3>
   </div>
 <div class="container-fluid">
-<div class="jumbotron">
-<h1><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Croatiae auctorum Latinorum bibliographia: <small>BaseX + TEI XML</small></h1>
-
-<p><a href="http://croala.ffzg.unizg.hr/intro">CroALa</a>, { current-date() }.</p>
-
-      <div class="container-fluid">
+  <div class="jumbotron">
+    <h1><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Croatiae auctorum Latinorum bibliographia: <small>croalabib</small></h1>
+  <div class="container-fluid">
+      <div class="col-md-6 datum">
+      <p><a href="http://croala.ffzg.unizg.hr/intro">CroALa</a>, { current-date() }.</p>
       <blockquote class="croala">
 			<ul>
 			<li>Tituli: { croala:bibcount() }</li>
@@ -53,6 +46,10 @@ declare
 			</ul>
       </blockquote>
       </div>
+      <div class="col-md-6 dbinfo">
+        {croala:infodb('croalabib')}
+      </div>
+  </div>
 </div>
 <div class="row">
       <div class="container-fluid col-sm-6">
@@ -99,10 +96,10 @@ declare
       </div>
 </div>
 <hr/>
-{ croala:footer() }
+{ croala:footerserver() }
 </div>
     </body>
-  </html>
+}
 };
 
 (:~
@@ -200,8 +197,9 @@ declare
 		element p { 
 		let $nomidd := $nomid || '.*'
 		 for $aref in collection('croalabib')//*:person[*:persName[text() contains text {$nomidd} using wildcards]]/@xml:id
-         let $elem := (collection('croalabib')//*:biblStruct)|(collection('croalabib')//*:bibl)|(collection('croalabib')//*:msDesc)|(collection('croalabib')//*:person)
-		 return $elem[descendant::*:ref[@target[. eq $aref]]]
+         for $elem in collection('croalabib')//*:listBibl[@ana='croala.opera']
+         let $hit := ($elem/*:bibl[descendant::*[@target=$aref or @ref=$aref]])|($elem/*:biblStruct[descendant::*[@target=$aref or @ref=$aref]])
+		 return $hit
 	 }
 };
 

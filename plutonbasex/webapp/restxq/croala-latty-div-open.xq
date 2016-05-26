@@ -28,8 +28,11 @@ declare
   (: HTML template starts here :)
 
 <html>
-<head><title>CroALa &amp; LatTy: div</title>
+<head><title>CroALa &amp; LatTy: nodus</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="A RestXQ function to open a node in an XML database and display text with some additional information. Part of the Croatica et Tyrolensia project."/>
+<meta name="keywords" content="XQuery,RestXQ,BaseX,XML,Neo-Latin,Digital Humanities,Croatian Latin Writers, hrvatski latinisti, Croatiae auctores Latini"/>
+<meta name="author" content="Neven Jovanović, Odsjek za klasičnu filologiju, Filozofski fakultet Sveučilišta u Zagrebu"/>
 <link rel="icon" href="/basex/static/gfx/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="/basex/static/dist/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="/basex/static/dist/css/basexc.css"/>
@@ -43,13 +46,13 @@ declare
   </div>
 <div class="container">
 <div class="jumbotron">
-<h1><span class="glyphicon glyphicon-th" aria-hidden="true"></span> CroALa &amp; LatTy: div</h1>
+<h1><span class="glyphicon glyphicon-th" aria-hidden="true"></span> CroALa &amp; LatTy: nodus</h1>
 
-<p><a href="http://www.ffzg.unizg.hr/klafil/croala">CroALa</a>, { current-date() }. Div {$divnode} in collectione {$db}.</p>
+<p><a href="http://croala.ffzg.unizg.hr">CroALa</a>, { current-date() }. Nodus {$divnode} in collectione {$db}.</p>
 <p>Functio nominatur: {rest:uri()}.</p>
 </div>
 <div class="container-fluid">
-<h2><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> Div {$divnode} in documento {db:path(db:open-pre($db,$divnode))}</h2>
+<h2><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> Nodus {$divnode} in documento {croala:filenode($db, db:path(db:open-pre($db,$divnode)))}</h2>
 
 <hr/>
 <blockquote class="croalatext">
@@ -59,7 +62,7 @@ declare
      </div>
 <hr/>
 
-{ croala:footer() }
+{ croala:footerserver() }
 </div>
 </body>
 </html>

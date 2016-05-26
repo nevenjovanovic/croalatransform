@@ -14,6 +14,7 @@ declare option output:omit-xml-declaration "no";
 declare option output:media-type "text/html";
 declare option output:method "html";
 
+declare variable $title := "Croatiae et Tyrolidis auctores Latini";
 
 declare function croala:authstats2($collection) {
 for $i in collection($collection)//*:listPerson[ends-with(@type, 'auctores')]/*:person
@@ -41,14 +42,7 @@ declare
   function page:croalalattyauctperiod2()
 {
   (: HTML template starts here :)
-
-<html>
-<head><title>Croatiae et Tyrolidis auctores Latini</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="icon" href="/basex/static/gfx/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/basexc.css"/>
-</head>
+element html { croala:htmlheadserver($title) ,
 
 <body>
 <div class="header">
@@ -58,7 +52,7 @@ declare
   </div>
 <div class="container-fluid">
 <div class="jumbotron">
-<h1><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Croatiae et Tyrolidis auctores Latini:<small> per tertiam partem saeculi</small></h1>
+<h1><span class="glyphicon glyphicon-th" aria-hidden="true"></span> {$title}:<small> per tertiam partem saeculi</small></h1>
 
 <p><a href="http://croala.ffzg.unizg.hr/intro">CroALa</a>, { current-date() }.</p>
 <p>Functio nominatur: <tt>{rest:uri()}</tt>.</p>
@@ -70,8 +64,7 @@ let $c := croala:authstats2($bibs)
 return 
 element div { attribute class {"col-md-6"},
 element h2 { $bibs || " (" || croala:authco2($bibs) || ")" },
-element table { 
-attribute class { "table table-striped"},
+element table {
 element thead {
   element tr {
     element td { "Saeculi pars" },
@@ -86,10 +79,10 @@ $c }
      <p/>
      </div>
 <hr/>
-{ croala:footer() }
+{ croala:footerserver() }
 </div>
 </body>
-</html>
+}
 };
 
 return

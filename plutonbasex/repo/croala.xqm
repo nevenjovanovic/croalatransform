@@ -1,6 +1,14 @@
 module namespace croala = "http://www.ffzg.unizg.hr/klafil/croala";
 
+declare namespace tei = 'http://www.tei-c.org/ns/1.0';
+
 (: add lost functions :)
+
+(: open file/text from link :)
+declare function croala:openfile($db,$filename){
+  for $text in db:open($db,$filename)//*:text
+  return $text
+};
 
 (: return list of documents in db, with paths, for anatomia :)
  declare function croala:analist($db) {
@@ -170,6 +178,15 @@ declare function croala:solraddr ($db, $txtnode) {
 (: make link to file in philologic :)
 declare function croala:localnode ($db, $txtnode) { 
   attribute href { "/node/" || $db || "/" || data($txtnode) } 
+
+ };
+ 
+ (: make link to file in db :)
+declare function croala:filenode ($db, $txtnode) { 
+element a {
+  attribute href { "/basex/documentum/" || $db || "/" || data($txtnode) } ,
+  $txtnode
+}
 
  };
 
@@ -485,9 +502,24 @@ declare function croala:mscount() {
 count( collection("croalabib")//*:msDesc
 )
 };
+(: list all works:)
+declare function croala:oplist(){
+  element tbody {
+  for $opus in collection("croalabib")//*:listBibl[matches(@ana,'croala.opera')]//(*:bibl|*:biblStruct)[@xml:id]
+  order by $opus/*:author[1] collation "?lang=hr"
+  return element tr {
+    element td { data($opus/@xml:id) },
+    element td { 
+    if ($opus/*:title) then normalize-space(data($opus/*:title[1])) else "S. t." },
+    element td { if ($opus/*:author) then $opus/*:author[1] else "S. a." } ,
+    element td { 
+    if ($opus/*:date/@period) then data($opus/*:date/@period) else "S. d." }
+  }
+}
+};
 (: count works total :)
 declare function croala:opcount() {
-count( collection("croalabib")//*:listBibl[@ana='croala.opera']/*:bibl
+count( croala:oplist()//*:tr
 )
 };
 (: count exemplars total :)
@@ -763,4 +795,35 @@ declare function croala:dramatitlepage($dramaid) {
     attribute class { "dramainfo"},
     $i
   }
+};
+
+declare function croala:croalabiblist(){
+  for $r in collection("croalabib")//tei:listBibl[@type="croala.libri.digital"]/tei:bibl
+  order by $r/tei:author[1] collation "?lang=hr"
+return 
+element tr { 
+element td { 
+element span { 
+attribute class {"bibline"} ,
+element b { "A: "},
+for $a in $r/tei:author return $a } ,
+element span { 
+attribute class {"bibline"} ,
+for $t in $r/tei:title return $t },
+element span { 
+attribute class {"bibline"} ,
+element b { "E: "},
+for $e in $r/tei:editor return 
+$e },
+
+for $i in $r/tei:relatedItem return 
+element span { 
+attribute class {"bibline"} , $i ,
+element a { 
+attribute href {$i/tei:ref/@target} , "Lege" } ,
+element a { 
+attribute href { replace("http://solr.ffzg.hr/philo4/croala0/query?report=bibliography&amp;method=proxy&amp;colloc_filter_choice=frequency&amp;filter_frequency=100&amp;year_interval=10&amp;filename=REPLACEXXXX&amp;start=0&amp;end=0","REPLACEXXXX", replace($i/tei:ref/@target,"#","")) } , "Scrutare" }
+}
+}
+ }
 };
