@@ -1,4 +1,4 @@
-element lexicon {
+let $lex := element lexicon {
   for $h in //*:h
   let $urn := replace(
     replace(
@@ -20,3 +20,4 @@ else element forms {
 } , $h/following-sibling::*:p[1]
 }
 }
+return file:write("/home/neven/rad/nlwl/2016-05-nlwl-lexicon.xml", $lex)
