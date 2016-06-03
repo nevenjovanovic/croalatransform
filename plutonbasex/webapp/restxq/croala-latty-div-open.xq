@@ -1,5 +1,6 @@
 import module namespace rest = "http://exquery.org/ns/restxq";
 import module namespace croala = "http://www.ffzg.unizg.hr/klafil/croala" at "../../repo/croala.xqm";
+import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../repo/vitezovic.xqm";
 (: open div in db :)
 
 declare namespace page = 'http://basex.org/examples/web-page';
@@ -12,6 +13,9 @@ declare option output:omit-xml-declaration "no";
 declare option output:media-type "text/html";
 declare option output:method "html";
 
+declare variable $title := "CroALa: nodus in collectione";
+declare variable $content := "A RestXQ function to open a node in an XML database and display text with some additional information. Part of the Croatica et Tyrolensia project.";
+declare variable $keywords := "XQuery,RestXQ,BaseX,XML,Neo-Latin,Digital Humanities,Croatian Latin Writers, hrvatski latinisti, Croatiae auctores Latini,Neo-Latin literature,TEI XML";
 
 
 (:~
@@ -28,15 +32,7 @@ declare
   (: HTML template starts here :)
 
 <html>
-<head><title>CroALa &amp; LatTy: nodus</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="description" content="A RestXQ function to open a node in an XML database and display text with some additional information. Part of the Croatica et Tyrolensia project."/>
-<meta name="keywords" content="XQuery,RestXQ,BaseX,XML,Neo-Latin,Digital Humanities,Croatian Latin Writers, hrvatski latinisti, Croatiae auctores Latini"/>
-<meta name="author" content="Neven Jovanović, Odsjek za klasičnu filologiju, Filozofski fakultet Sveučilišta u Zagrebu"/>
-<link rel="icon" href="/basex/static/gfx/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="/basex/static/dist/css/basexc.css"/>
-</head>
+{ vit:htmlheadserver($title, $content, $keywords) }
 
 <body>
 <div class="header">

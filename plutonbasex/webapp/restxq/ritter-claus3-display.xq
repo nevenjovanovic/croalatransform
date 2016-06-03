@@ -1,3 +1,4 @@
+(: display Ritter's three word clausulae :)
 import module namespace rest = "http://exquery.org/ns/restxq";
 import module namespace croala = "http://www.ffzg.unizg.hr/klafil/croala" at "../../repo/croala.xqm";
 import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../repo/vitezovic.xqm";
@@ -5,9 +6,9 @@ import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../repo/v
 
 declare namespace page = 'http://basex.org/examples/web-page';
 
-declare variable $title := 'Ritter Vitezović et Ovidius';
-declare variable $content := "Counts of verse lines in poetic letters by a Croatian Neo-Latin author Paulus Ritter Vitezović, compared to counts in Ovid's epistles.";
-declare variable $keywords := "Neo-Latin literature, poetic language, comparative analysis of literature, poetic verse, Ovid, Croatia";
+declare variable $title := 'Clausulae apud Ritterum';
+declare variable $content := "Three word clausulae in Ritter Vitezović's poetic epistles, ordered by fequency.";
+declare variable $keywords := "Neo-Latin literature, poetic language, comparative analysis of literature, poetic verse, Pavao Ritter Vitezović, Paulus Ritter Vitezovich, clausulae, frequency";
 
 
 
@@ -15,7 +16,7 @@ declare variable $keywords := "Neo-Latin literature, poetic language, comparativ
  : This function returns an XML response message.
  :)
 declare
-  %rest:path("vitezovic-versus")
+  %rest:path("vitezovic-claus3")
   %output:method(
   "xhtml"
 )
@@ -28,7 +29,7 @@ declare
   %output:doctype-system(
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
 )
-  function page:vitezovicversus()
+  function page:vitezovicclaus3()
 {
   (: HTML template starts here :)
 
@@ -42,12 +43,11 @@ declare
 <div class="col-md-6">
 <p>Ritter Vitezović et Ovidius: <a href="http://croala.ffzg.unizg.hr">CroALa</a> et <a href="http://www.perseus.tufts.edu/">Persei bibliotheca digitalis</a>, { current-date() }.</p>
 <p><a href="http://orcid.org/0000-0002-9119-399X">Neven Jovanović</a>, <a href="http://www.unipu.hr/index.php?id=273">Violeta Moretti</a>, <a href="https://unipu.academia.edu/GoranaStepanic">Gorana Stepanić</a></p>
-<p>Quot versus in epistulis Ritteri Vitezović, quot in epistulis Ovidianis?</p>
+<p>Quae clausulae occurrunt in epistulis Ritter Vitezović, quae clausulae repetuntur?</p>
 <p>Functio nominatur: {rest:uri()}.</p>
 </div>
 <div class="col-md-6">
-{croala:infodb('vitezovic-epistolae2')}<br/>
-{croala:infodb('ovid-pdl2')}
+{croala:infodb('vitezovic-epistolae2')}
 </div>
 </div>
 </div>
@@ -57,22 +57,13 @@ declare
 <table class="table-striped  table-hover table-centered">
 	<thead>
 	<tr>
-  <td>Titulus</td>
-	<td>Quot versus</td>
+  <td>Clausula</td>
+	<td>Ubi</td>
   </tr>
 	</thead>
-	{vit:versecount("vitezovic-epistolae2")}
+	{vit:group3("vitezovicfv2","vitezovic-epistolae2")}
   </table>
-  <table class="table-striped  table-hover table-centered">
-	<thead>
-	<tr>
-  <td>Titulus</td>
-	<td>Quot versus</td>
-  </tr>
-	</thead>
-  {vit:versecount("ovid-pdl2")}
   
-     </table>
      </div>
 </blockquote>
      <p/>

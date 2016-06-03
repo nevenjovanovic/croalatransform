@@ -7,6 +7,13 @@ attribute href { $urn },
 $text }
 };
 
+(: helper function for node :)
+(: make link to file in philologic :)
+declare function vit:localnode ($db, $txtnode) { 
+  attribute href { "/node/" || $db || "/" || data($txtnode) } 
+
+ };
+
 (: helper function to return rows :)
 
 declare function vit:rows2($td1 , $td2 ){
@@ -47,7 +54,48 @@ return vit:rows2(data($title), $versecount)
 let $totalcount := sum(data($textcounts//tr/td[2]))
 return element tbody { $textcounts//tr ,
 element tr { 
-element td { "Omnes versus" },
+element td { element em { "Omnes versus" } },
 element td { $totalcount } }
+}
+};
+
+(: group repeated 3-word clausulae, order by count of repetitions :)
+declare function vit:group3 ($collection, $maincollection) {
+  (: return three words at the end of Ovid's or Ritter's lines :)
+(: group by repetitions, most of them first :)
+
+let $cl3 := element claus {
+for $aa in 
+for $e in collection($collection)//*:v
+return if (matches($e//text(), '[a-z]')) then element c { 
+$e/@vid ,
+$e/@target ,
+ft:tokenize($e)[last() - 2] , ft:tokenize($e)[last() - 1] , ft:tokenize($e)[last()] }
+else()
+order by $aa
+return $aa
+}
+let $versecount := count($cl3//c)
+let $clbody := element span {
+for $clausula in $cl3//c
+let $text := $clausula/text()
+group by $text
+order by count($clausula/@vid) descending , $text
+return element tr {
+element td { $text } ,
+element td { 
+  for $id in $clausula/@vid 
+  let $nodeid := data($id)
+  return element a { 
+  vit:localnode($maincollection,$nodeid),
+  $nodeid }  }
+}
+}
+let $uniqclcount := count($clbody//tr)
+return element tbody { element tr { 
+element td { "Clausulae " || $uniqclcount }, 
+element td { "Versus " || $versecount }
+} ,
+$clbody
 }
 };
