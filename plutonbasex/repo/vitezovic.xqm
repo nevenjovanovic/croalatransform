@@ -10,7 +10,7 @@ $text }
 (: helper function for node :)
 (: make link to file in philologic :)
 declare function vit:localnode ($db, $txtnode) { 
-  attribute href { "/node/" || $db || "/" || data($txtnode) } 
+  attribute href { "/basex/node/" || $db || "/" || data($txtnode) } 
 
  };
 
