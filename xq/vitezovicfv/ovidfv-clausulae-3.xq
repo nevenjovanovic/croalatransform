@@ -4,6 +4,8 @@
 import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../plutonbasex/repo/vitezovic.xqm";
 declare variable $maincollection := "ovid-pdl2";
 declare variable $collection := "ovidfv2";
+declare variable $dbname := "ovidfv2clau3";
+declare variable $dbdocname := "ovidclausulae3.xml";
 let $cl3 := element claus {
 for $aa in 
 for $e in collection($collection)//*:v
@@ -15,6 +17,7 @@ else()
 order by $aa
 return $aa
 }
+let $tbody := element tbody {
 for $clausula in $cl3//c
 let $text := $clausula/text()
 group by $text
@@ -26,3 +29,5 @@ element td {
   let $nodeid := data($id)
   return element a { vit:localnode($maincollection,$nodeid) } }
 }
+}
+return db:create($dbname, $tbody , $dbdocname, map { 'ftindex': true(), 'intparse': true(), 'stripns': true() })
