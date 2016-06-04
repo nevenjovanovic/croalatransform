@@ -27,7 +27,7 @@ element td { $text } ,
 element td { 
   for $id in $clausula/@vid 
   let $nodeid := data($id)
-  return element a { vit:localnode($maincollection,$nodeid) } }
+  return element a { vit:localnode($maincollection,$nodeid) , $nodeid } }
 }
 }
 return db:create($dbname, $tbody , $dbdocname, map { 'ftindex': true(), 'intparse': true(), 'stripns': true() })
