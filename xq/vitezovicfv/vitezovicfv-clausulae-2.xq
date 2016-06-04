@@ -1,12 +1,12 @@
-(: return two words at the end of Ovid's lines :)
+(: return two words at the end of Vitezović's lines :)
 (: group by repetitions, most of them first :)
-(: string-length n > 9 :)
-(: for Ovid, produces 8666 rows :)
+(: keep as interesting string-length n > 9 :)
+(: for Vitezović, creates 7299 rows :)
 import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../plutonbasex/repo/vitezovic.xqm";
-declare variable $maincollection := "ovid-pdl2";
-declare variable $collection := "ovidfv2";
-declare variable $dbname := "ovidfv2clau2";
-declare variable $dbdocname := "ovidclausulae2.xml";
+declare variable $maincollection := "vitezovic-epistolae2";
+declare variable $collection := "vitezovicfv2";
+declare variable $dbname := "vitezovicfv2clau2";
+declare variable $dbdocname := "vitezovicclausulae2.xml";
 let $cl3 := element claus {
 for $aa in 
 for $e in collection($collection)//*:v
@@ -29,8 +29,7 @@ element td { $text } ,
 element td { 
   for $id in $clausula/@vid 
   let $nodeid := data($id)
-  return element a { vit:localnode($maincollection,$nodeid),
-  $nodeid } }
+  return element a { vit:localnode($maincollection,$nodeid) , $nodeid } }
 }
 }
 return db:create($dbname, $tbody , $dbdocname, map { 'ftindex': true(), 'intparse': true(), 'stripns': true() })

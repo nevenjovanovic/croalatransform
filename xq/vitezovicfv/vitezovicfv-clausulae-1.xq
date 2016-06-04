@@ -1,12 +1,35 @@
-(: return single words at the end of line, Vitezović :)
+(: return single words at the end of Vitezović's lines :)
+(: group by repetitions, most of them first :)
+(: keep as interesting string-length n > 6 :)
+(: for Vitezović, creates 1034 rows :)
+import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../plutonbasex/repo/vitezovic.xqm";
+declare variable $maincollection := "vitezovic-epistolae2";
+declare variable $collection := "vitezovicfv2";
+declare variable $dbname := "vitezovicfv2clau1";
+declare variable $dbdocname := "vitezovicclausulae1.xml";
 let $cl3 := element claus {
 for $aa in 
-for $e in collection("vitezovicfv")//*:l
+for $e in collection($collection)//*:v
 return if (matches($e//text(), '[a-z]')) then element c { 
-$e/@* ,
- ft:tokenize($e)[last()] }
+$e/@vid ,
+$e/@target ,
+ft:tokenize($e)[last()] }
 else()
+where string-length($aa) > 6
 order by $aa
 return $aa
 }
-return db:create("vitezovicfvclau1", $cl3 , "vitezovicclausulae1.xml", map { 'ftindex': true(), 'intparse': true() })
+let $tbody := element tbody {
+for $clausula in $cl3//c
+let $text := $clausula/text()
+group by $text
+order by count($clausula/@vid) descending , $text
+return element tr {
+element td { $text } ,
+element td { 
+  for $id in $clausula/@vid 
+  let $nodeid := data($id)
+  return element a { vit:localnode($maincollection,$nodeid) , $nodeid } }
+}
+}
+return db:create($dbname, $tbody , $dbdocname, map { 'ftindex': true(), 'intparse': true(), 'stripns': true() })
