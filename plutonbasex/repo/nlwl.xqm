@@ -33,6 +33,43 @@ nlwl:rows2($c, $lemma )
 
 (: return statistics on word types / nouns, adjectives :)
 
+declare function nlwl:posgenera() {
+  let $genera := map {
+  "noun": "Nomina", 
+  "verb": "Verba", 
+  "adjective": "Adiectiva", 
+  "adverb": "Adverbia", 
+  "particle": "Particulae", 
+  "preposition": "Praepositiones"
+}
+return $genera
+};
+
+declare function nlwl:pos() {
+
+let $poslist := element tbody {
+for $pos in ("noun", "verb", "adjective", "adverb", "particle", "preposition")
+let $nlwl := collection("nlwl-lexicon")//*:lexicon
+let $count := count($nlwl/*:entry/*:partOfSpeech/*[name()=$pos])
+order by $count descending
+return nlwl:rows2(map:get(nlwl:posgenera(),$pos), $count)
+}
+let $zeropos := count(collection("nlwl-lexicon")//*:partOfSpeech[not(*)])
+let $ambiguous := count(collection("nlwl-lexicon")//*:entry[*:partOfSpeech[*[2]]])
+let $orthography := count(collection("nlwl-lexicon")//*:entry[*:forms/*:other])
+let $entries := count(collection("nlwl-lexicon")//*:entry)
+return element table {
+  element thead {
+  nlwl:rows2("Lemmata omnia", $entries),
+  nlwl:rows2("Orthographice variantur", $orthography),
+  nlwl:rows2("Sine genere verborum", $zeropos),
+  nlwl:rows2("Pluribus generis verborum annotata", $ambiguous)
+},
+    $poslist
+}
+
+};
+
 (: return statistics on word length :)
 
 (: return longest words :)
