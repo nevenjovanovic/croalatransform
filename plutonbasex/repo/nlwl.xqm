@@ -17,6 +17,14 @@ element tr {
  }
 };
 
+(: return statistics on word formation, prefixes :)
+
+(: TBA :)
+
+(: return statistics on word formation, suffixes :)
+
+(: TBA :)
+
 (: return statistics on orthography :)
 
 declare function nlwl:ortho(){
@@ -49,16 +57,17 @@ declare function nlwl:pos() {
 
 let $poslist := element tbody {
 for $pos in ("noun", "verb", "adjective", "adverb", "particle", "preposition")
-let $nlwl := collection("nlwl-lexicon")//*:lexicon
+let $nlwl := collection("nlwl")//*:lexicon
 let $count := count($nlwl/*:entry/*:partOfSpeech/*[name()=$pos])
 order by $count descending
 return nlwl:rows2(map:get(nlwl:posgenera(),$pos), $count)
 }
-let $zeropos := count(collection("nlwl-lexicon")//*:partOfSpeech[not(*)])
-let $ambiguous := count(collection("nlwl-lexicon")//*:entry[*:partOfSpeech[*[2]]])
-let $orthography := count(collection("nlwl-lexicon")//*:entry[*:forms/*:other])
-let $entries := count(collection("nlwl-lexicon")//*:entry)
+let $zeropos := count(collection("nlwl")//*:partOfSpeech[not(*)])
+let $ambiguous := count(collection("nlwl")//*:entry[*:partOfSpeech[*[2]]])
+let $orthography := count(collection("nlwl")//*:entry[*:forms/*:other])
+let $entries := count(collection("nlwl")//*:entry)
 return element table {
+  attribute class {"table-striped table-hover table-centered"},
   element thead {
   nlwl:rows2("Lemmata omnia", $entries),
   nlwl:rows2("Orthographice variantur", $orthography),
