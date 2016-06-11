@@ -1,20 +1,22 @@
 (: return two words at the end of Vitezović's lines :)
 (: group by repetitions, most of them first :)
-(: for Vitezović, creates 8860 rows :)
+(: keep as interesting string-length n > 9 :)
+(: for Vitezović, creates 5040 rows :)
 import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../plutonbasex/repo/vitezovic.xqm";
 declare variable $maincollection := "vitezovic-epistolae2";
 declare variable $collection := "vitezovicfv2";
-declare variable $dbname := "vitezovicfv2inc3";
-declare variable $dbdocname := "vitezovicincipit3.xml";
+declare variable $dbname := "vitezovicfv2inc2";
+declare variable $dbdocname := "vitezovicincipit2.xml";
 let $cl3 := element claus {
 for $aa in 
 for $e in collection($collection)//*:v
 return if (matches($e//text(), '[a-z]')) then element c { 
 $e/@vid ,
 $e/@target ,
-for $n in 1 to 3
+for $n in 1 to 2
 return ft:tokenize($e)[$n] }
 else()
+where string-length($aa) > 9
 order by $aa
 return $aa
 }

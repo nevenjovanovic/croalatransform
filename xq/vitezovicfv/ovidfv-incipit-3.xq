@@ -1,11 +1,11 @@
-(: return two words at the end of Vitezović's lines :)
+(: return three words at the end of Ovid's lines :)
 (: group by repetitions, most of them first :)
-(: for Vitezović, creates 8860 rows :)
+(: for Ovid, creates 10458 rows :)
 import module namespace vit = "http://croala.ffzg.unizg.hr/vit" at "../../plutonbasex/repo/vitezovic.xqm";
-declare variable $maincollection := "vitezovic-epistolae2";
-declare variable $collection := "vitezovicfv2";
-declare variable $dbname := "vitezovicfv2inc3";
-declare variable $dbdocname := "vitezovicincipit3.xml";
+declare variable $maincollection := "ovid-pdl2";
+declare variable $collection := "ovidfv2";
+declare variable $dbname := "ovidfv2inc3";
+declare variable $dbdocname := "ovidincipit3.xml";
 let $cl3 := element claus {
 for $aa in 
 for $e in collection($collection)//*:v
