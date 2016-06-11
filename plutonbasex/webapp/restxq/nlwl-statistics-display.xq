@@ -52,11 +52,10 @@ declare
 <div class="container-fluid">
 <blockquote class="croala">
 	<div class="table-responsive">
-<table class="table-striped  table-hover table-centered">
 
-(: function here :)
+<!-- function here  -->
+
 {nlwl:pos()}
-     </table>
      </div>
 </blockquote>
      <p/>
