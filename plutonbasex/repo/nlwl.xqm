@@ -72,7 +72,7 @@ return element table {
   nlwl:rows2("Lemmata omnia", $entries),
   nlwl:rows2("Orthographice variantur", $orthography),
   nlwl:rows2("Sine genere verborum", $zeropos),
-  nlwl:rows2("Pluribus generis verborum annotata", $ambiguous)
+  nlwl:rows2("Pluribus generibus verborum annotata", $ambiguous)
 },
     $poslist
 }
