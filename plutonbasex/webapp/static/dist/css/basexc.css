@@ -189,6 +189,13 @@ div > code {
   white-space: normal;
 }
 
+table > caption {
+font-size: large;
+padding: 0.25em;
+color:#586e75;
+background-color: #fdf6e3;
+}
+
 /* numbered rows in tables */
 table.numb {
     counter-reset: rowNumber;
